@@ -184,6 +184,8 @@ export default function App() {
   const [language, setLanguage] = useState('es')
   const [isProcessing, setIsProcessing] = useState(false)
   const videoCatalogues = useRef({})
+  const handleGenerateRef = useRef(null)
+  const autoGenFired = useRef(false)
   const [dayTimeText, setDayTimeText] = useState('')
   const [showInputs, setShowInputs] = useState(false)
   const [charts, setCharts] = useState(null)
@@ -411,6 +413,19 @@ export default function App() {
     if (daysSince > 7) performResearchUpload(charts)
   }, [charts]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Auto-generate when the extension has populated the fields.
+  // A 300ms debounce gives optional fields (externalText, dayTimeText) time to
+  // arrive after watchedText, since the extension sets them sequentially.
+  useEffect(() => {
+    if (autoGenFired.current) return
+    if (extInstalled !== 'installed') return
+    if (!watchedText.trim()) return
+
+    autoGenFired.current = true
+    const t = setTimeout(() => handleGenerateRef.current(), 300)
+    return () => clearTimeout(t)
+  }, [extInstalled, watchedText]) // eslint-disable-line react-hooks/exhaustive-deps
+
   function handleLevelClick(level) {
     if (level < fromLevel) {
       setFromLevel(level)
@@ -440,25 +455,7 @@ export default function App() {
   }
   if (extInstalled === 'checking') return null
 
-  // Always keep a ref to the latest handleGenerate so the auto-generate timeout
-  // calls the version that has the most-recent state (externalText, dayTimeText)
-  // rather than the stale closure captured when the effect last ran.
-  const handleGenerateRef = useRef(handleGenerate)
   handleGenerateRef.current = handleGenerate
-
-  // Auto-generate when the extension has populated the fields.
-  // A 300ms debounce gives optional fields (externalText, dayTimeText) time to
-  // arrive after watchedText, since the extension sets them sequentially.
-  const autoGenFired = useRef(false)
-  useEffect(() => {
-    if (autoGenFired.current) return
-    if (extInstalled !== 'installed') return
-    if (!watchedText.trim()) return
-
-    autoGenFired.current = true
-    const t = setTimeout(() => handleGenerateRef.current(), 300)
-    return () => clearTimeout(t)
-  }, [extInstalled, watchedText]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const canGenerate = watchedText.trim() && !isProcessing
 
