@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Dreaming Insights</title>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="7c07b8c9-fb7c-4e4e-a37a-269a37ca6012"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f5f7fa;
+      padding: 40px 24px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 40px 48px;
+    }
+
+    header {
+      margin-bottom: 36px;
+    }
+
+    header a {
+      font-size: 13px;
+      color: #3949ab;
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #1a237e;
+      margin: 12px 0 4px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #888;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a237e;
+      margin: 32px 0 8px;
+      padding-top: 24px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    h2:first-of-type { border-top: none; padding-top: 0; }
+
+    p { margin-bottom: 12px; color: #333; }
+
+    ul {
+      margin: 4px 0 12px 20px;
+      color: #333;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #e8eaf6;
+      border-left: 4px solid #3949ab;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 24px 0;
+      font-weight: 500;
+      color: #1a237e;
+    }
+
+    a { color: #3949ab; }
+
+    footer {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/">&larr; Back to Dreaming Insights</a>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Dreaming Insights &mdash; dreaminginsights.com &amp; Chrome Extension</p>
+    </header>
+
+    <div class="highlight">
+      By default, all data processing happens entirely in your browser. Nothing you paste into
+      this tool is sent anywhere unless you explicitly opt in to the research programme.
+    </div>
+
+    <h2>Overview</h2>
+    <p>
+      Dreaming Insights is a browser-based analytics tool for Dreaming Spanish and Dreaming French
+      learners. All chart generation and data processing runs locally on your device. No data is
+      collected or transmitted by default.
+    </p>
+
+    <h2>Data you paste in</h2>
+    <p>
+      The watched-videos, external time, and day watched time JSON you provide are parsed and used
+      only to generate your charts. This data is never transmitted to any server unless you
+      explicitly opt in to the research programme (see below).
+    </p>
+
+    <h2>Local storage</h2>
+    <p>
+      A small amount of preference data is saved in your browser's local storage so your settings
+      persist between visits:
+    </p>
+    <ul>
+      <li>Which external content sources are visible on the difficulty chart</li>
+      <li>Whether you have opted in to the research programme, and when data was last uploaded</li>
+    </ul>
+    <p>
+      This data never leaves your device. You can clear it at any time by clearing your browser's
+      local storage for this site.
+    </p>
+
+    <h2>Chrome extension</h2>
+    <p>
+      The <strong>Dreaming Insights Chrome extension</strong> intercepts API responses from
+      <strong>app.dreaming.com</strong> while you browse your progress page and makes that data
+      available to this website. The extension:
+    </p>
+    <ul>
+      <li>Reads three API responses your browser already receives: watched videos, external time, and daily watch time</li>
+      <li>Stores them locally using <strong>chrome.storage.local</strong> — Chrome's built-in local storage for extensions</li>
+      <li>Never transmits any data to any external server or third party</li>
+      <li>Does not run on any website other than <strong>app.dreaming.com</strong> and <strong>dreaminginsights.com</strong></li>
+    </ul>
+    <p>
+      Data captured by the extension is retained in local storage until you clear it via the
+      extension popup, uninstall the extension, or clear your browser's extension storage. It is
+      never synced to the cloud and is accessible only by the extension itself.
+    </p>
+    <p>
+      The extension requires two host permissions: one to intercept API responses on
+      app.dreaming.com, and one to detect the extension is installed and auto-fill data fields
+      on dreaminginsights.com.
+    </p>
+
+    <h2>Research programme (optional opt-in)</h2>
+    <p>
+      If you choose to contribute to the research programme, the following data is uploaded to
+      secure cloud storage (AWS S3) operated by the Dreaming Insights team:
+    </p>
+    <ul>
+      <li>Your watched-videos history</li>
+      <li>Your external time entries (if provided)</li>
+      <li>Your daily watch time history</li>
+    </ul>
+    <p>
+      Your data is stored under an anonymised identifier — a one-way hash derived from the dates
+      and durations of your earliest watch records. This hash cannot be reversed to identify you.
+      No name or account information is collected. If you choose to provide an email address during
+      opt-in, it is stored separately from your viewing data and used only to notify you about
+      research projects you contributed to.
+    </p>
+    <p>
+      Contributed data is used solely for research purposes such as building recommendation models
+      and understanding viewing patterns across the Dreaming Insights community.
+    </p>
+    <p>
+      Once opted in, your data is automatically refreshed on each visit if more than 7 days have
+      passed since the last upload. To opt out, clear this site's local storage in your browser
+      settings — no further uploads will occur.
+    </p>
+
+    <h2>No tracking or analytics</h2>
+    <p>
+      This site does not use cookies, advertising trackers, or any third-party analytics.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about how your data is used, please
+      <a href="https://forms.gle/F7FzqFdQ9yA5XgtJA" target="_blank" rel="noreferrer">get in touch</a>.
+    </p>
+
+    <footer>Last updated: June 2026</footer>
+  </div>
+</body>
+</html>
