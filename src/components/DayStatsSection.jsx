@@ -1,3 +1,68 @@
+import { useState } from 'react'
+
+function GoalCalculator({ totalHours }) {
+  const [targetHours, setTargetHours] = useState('')
+  const [targetDate, setTargetDate] = useState('')
+
+  const today = new Date().toISOString().slice(0, 10)
+
+  const result = (() => {
+    const h = parseFloat(targetHours)
+    if (!h || !targetDate) return null
+    if (h <= totalHours) return { type: 'achieved' }
+    const daysRemaining = Math.round(
+      (new Date(targetDate + 'T00:00:00') - new Date(today + 'T00:00:00')) / 86400000
+    )
+    if (daysRemaining <= 0) return { type: 'past' }
+    const minsPerDay = (h - totalHours) * 60 / daysRemaining
+    return { type: 'result', minsPerDay, daysRemaining, targetHours: h }
+  })()
+
+  return (
+    <div className="goal-calculator">
+      <div className="goal-calculator__inputs">
+        <label className="goal-calculator__field">
+          <span>Target hours</span>
+          <input
+            type="number"
+            min={1}
+            value={targetHours}
+            onChange={e => setTargetHours(e.target.value)}
+            placeholder="e.g. 500"
+          />
+        </label>
+        <label className="goal-calculator__field">
+          <span>By date</span>
+          <input
+            type="date"
+            min={today}
+            value={targetDate}
+            onChange={e => setTargetDate(e.target.value)}
+          />
+        </label>
+      </div>
+      {result && (
+        <div className="goal-calculator__result">
+          {result.type === 'achieved' && (
+            <span className="goal-calc-achieved">
+              ✅ Already at {totalHours.toFixed(0)}h — target achieved!
+            </span>
+          )}
+          {result.type === 'past' && (
+            <span className="goal-calc-warn">Target date is in the past.</span>
+          )}
+          {result.type === 'result' && (
+            <span className="goal-calc-result">
+              <strong>{result.minsPerDay.toFixed(0)} min/day</strong>
+              {' '}over {result.daysRemaining} days to reach {result.targetHours.toFixed(0)}h
+            </span>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function Card({ label, value, sub }) {
   return (
     <div className="stat-card">
@@ -63,6 +128,8 @@ export default function DayStatsSection({ stats }) {
             ))}
           </tbody>
         </table>
+        <div className="goal-calculator__heading">Goal calculator</div>
+        <GoalCalculator totalHours={stats.totalHours} />
       </div>
 
       {/* ── Insights + Best Days ── */}
