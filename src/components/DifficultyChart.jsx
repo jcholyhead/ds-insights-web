@@ -86,6 +86,22 @@ function truncate(str, max = 50) {
   return str.length > max ? str.slice(0, max) + '…' : str
 }
 
+const DIFFICULTY_SERIES = [
+  { key: 'rating',     label: 'Individual video',    color: '#90CAF9' },
+  { key: 'rollingAvg', label: '20-video rolling avg', color: '#1565C0' },
+  { key: 'p90',        label: 'P90 (rolling 20)',     color: '#e65100' },
+]
+
+function loadDifficultySettings() {
+  try { return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}') }
+  catch { return {} }
+}
+
+function saveDifficultySettings(patch) {
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...loadDifficultySettings(), ...patch })) }
+  catch {}
+}
+
 function sourcesFromStorage(allNames) {
   const saved = localStorage.getItem(STORAGE_KEY)
   if (saved !== null) {
@@ -101,9 +117,10 @@ function sourcesFromStorage(allNames) {
 export default function DifficultyChart({ difficultyData, appearances, consumptionPoints, hasExternalData, xMin = 0 }) {
   const [showFilter, setShowFilter] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
-  const [logScale, setLogScale] = useState(() => {
-    try { return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}').logScale ?? false }
-    catch { return false }
+  const [logScale, setLogScale] = useState(() => loadDifficultySettings().logScale ?? false)
+  const [visibleSeries, setVisibleSeries] = useState(() => {
+    const saved = loadDifficultySettings().visibleSeries ?? {}
+    return Object.fromEntries(DIFFICULTY_SERIES.map(s => [s.key, saved[s.key] ?? true]))
   })
   const [page, setPage] = useState(0)
   const [visibleSources, setVisibleSources] = useState(() => {
@@ -130,12 +147,12 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...visibleSources]))
   }, [visibleSources])
 
-  useEffect(() => {
-    try {
-      const prev = JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}')
-      localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...prev, logScale }))
-    } catch {}
-  }, [logScale])
+  useEffect(() => { saveDifficultySettings({ logScale }) }, [logScale])
+  useEffect(() => { saveDifficultySettings({ visibleSeries }) }, [visibleSeries])
+
+  function toggleSeriesVisibility(key) {
+    setVisibleSeries(prev => ({ ...prev, [key]: !prev[key] }))
+  }
 
   // For each marker, look up the rolling average at that exact x position and
   // compare it to the Y midpoint. Label goes where there's more space.
@@ -270,7 +287,7 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
       </div>
 
       {showSettings && (
-        <div className="chart-settings-panel">
+        <div className="chart-settings-panel chart-settings-panel--col">
           <label className="chart-settings-item">
             <input
               type="checkbox"
@@ -279,6 +296,19 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
             />
             Logarithmic x-axis (log₁₀)
           </label>
+          <div className="chart-settings-divider" />
+          <div className="chart-settings-group-label">Show series</div>
+          {DIFFICULTY_SERIES.map(({ key, label, color }) => (
+            <label key={key} className="chart-settings-item">
+              <input
+                type="checkbox"
+                checked={visibleSeries[key]}
+                onChange={() => toggleSeriesVisibility(key)}
+              />
+              <span className="chart-settings-swatch" style={{ background: color }} />
+              {label}
+            </label>
+          ))}
         </div>
       )}
 
@@ -397,6 +427,7 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
             dot={{ fill: '#90CAF9', r: 3, fillOpacity: 0.45, strokeWidth: 0 }}
             activeDot={{ r: 5, fill: '#1565C0', fillOpacity: 0.9 }}
             isAnimationActive={false}
+            hide={!visibleSeries.rating}
           />
           <Line
             yAxisId="main"
@@ -406,6 +437,7 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
             strokeWidth={2.5}
             dot={false}
             isAnimationActive={false}
+            hide={!visibleSeries.rollingAvg}
           />
           <Line
             yAxisId="main"
@@ -416,6 +448,7 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
             dot={false}
             strokeDasharray="5 3"
             isAnimationActive={false}
+            hide={!visibleSeries.p90}
           />
 
           {[...yAssignments.entries()].map(([name, yVal]) => {

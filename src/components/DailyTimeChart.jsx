@@ -59,19 +59,42 @@ function DailyDot(props) {
   )
 }
 
+const SERIES = [
+  { key: 'minutes',    label: 'Daily minutes', color: '#0288d1' },
+  { key: 'avg7',       label: '7-day avg',     color: '#f57c00' },
+  { key: 'avg30',      label: '30-day avg',    color: '#c62828' },
+  { key: 'allTimeAvg', label: 'All-time avg',  color: '#757575' },
+]
+
+function loadSettings() {
+  try { return JSON.parse(localStorage.getItem(DAILY_SETTINGS_KEY) || '{}') }
+  catch { return {} }
+}
+
+function saveSettings(patch) {
+  try { localStorage.setItem(DAILY_SETTINGS_KEY, JSON.stringify({ ...loadSettings(), ...patch })) }
+  catch {}
+}
+
 export default function DailyTimeChart({ points }) {
   const [showSettings, setShowSettings] = useState(false)
-  const [compressY, setCompressY] = useState(() => {
-    try { return JSON.parse(localStorage.getItem(DAILY_SETTINGS_KEY) || '{}').compressY ?? false }
-    catch { return false }
+  const [compressY, setCompressY] = useState(() => loadSettings().compressY ?? false)
+  const [visibleSeries, setVisibleSeries] = useState(() => {
+    const saved = loadSettings().visibleSeries ?? {}
+    return Object.fromEntries(SERIES.map(s => [s.key, saved[s.key] ?? true]))
   })
 
   function toggleCompressY(val) {
     setCompressY(val)
-    try {
-      const prev = JSON.parse(localStorage.getItem(DAILY_SETTINGS_KEY) || '{}')
-      localStorage.setItem(DAILY_SETTINGS_KEY, JSON.stringify({ ...prev, compressY: val }))
-    } catch {}
+    saveSettings({ compressY: val })
+  }
+
+  function toggleSeries(key) {
+    setVisibleSeries(prev => {
+      const next = { ...prev, [key]: !prev[key] }
+      saveSettings({ visibleSeries: next })
+      return next
+    })
   }
 
   const { processedPoints, yDomain } = useMemo(() => {
@@ -113,7 +136,7 @@ export default function DailyTimeChart({ points }) {
       </div>
 
       {showSettings && (
-        <div className="chart-settings-panel">
+        <div className="chart-settings-panel chart-settings-panel--col">
           <label className="chart-settings-item">
             <input
               type="checkbox"
@@ -125,6 +148,19 @@ export default function DailyTimeChart({ points }) {
               (caps at 2× all-time avg; outliers shown in orange)
             </span>
           </label>
+          <div className="chart-settings-divider" />
+          <div className="chart-settings-group-label">Show series</div>
+          {SERIES.map(({ key, label, color }) => (
+            <label key={key} className="chart-settings-item">
+              <input
+                type="checkbox"
+                checked={visibleSeries[key]}
+                onChange={() => toggleSeries(key)}
+              />
+              <span className="chart-settings-swatch" style={{ background: color }} />
+              {label}
+            </label>
+          ))}
         </div>
       )}
 
@@ -155,6 +191,7 @@ export default function DailyTimeChart({ points }) {
             dot={<DailyDot />}
             activeDot={{ r: 5, fill: '#0288d1' }}
             isAnimationActive={false}
+            hide={!visibleSeries.minutes}
           />
           <Line
             dataKey="avg7"
@@ -163,6 +200,7 @@ export default function DailyTimeChart({ points }) {
             strokeWidth={2}
             dot={false}
             isAnimationActive={false}
+            hide={!visibleSeries.avg7}
           />
           <Line
             dataKey="avg30"
@@ -171,6 +209,7 @@ export default function DailyTimeChart({ points }) {
             strokeWidth={2.5}
             dot={false}
             isAnimationActive={false}
+            hide={!visibleSeries.avg30}
           />
           <Line
             dataKey="allTimeAvg"
@@ -180,6 +219,7 @@ export default function DailyTimeChart({ points }) {
             strokeDasharray="6 3"
             dot={false}
             isAnimationActive={false}
+            hide={!visibleSeries.allTimeAvg}
           />
         </ComposedChart>
       </ResponsiveContainer>
