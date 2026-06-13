@@ -15,9 +15,13 @@ import {
   buildDailyTimeData,
   buildDayStats,
   getAllConsumptionPoints,
+  buildCountryData,
+  buildDSvsExternalData,
 } from './utils/compute'
 import DifficultyChart from './components/DifficultyChart'
 import ContentSplitChart from './components/ContentSplitChart'
+import CountryPieChart from './components/CountryPieChart'
+import DSvsExternalChart from './components/DSvsExternalChart'
 import GuidesPieChart from './components/GuidesPieChart'
 import GuidesBarChart from './components/GuidesBarChart'
 import TagsBarChart from './components/TagsBarChart'
@@ -73,7 +77,7 @@ export default function Demo() {
         const lang = (watchedData.language || 'es').toLowerCase()
         const catalogueRes = await fetch(`/videos-${lang}.json`)
         if (!catalogueRes.ok) throw new Error(`Could not load videos-${lang}.json`)
-        const { videos } = await catalogueRes.json()
+        const { videos, guides } = await catalogueRes.json()
 
         let externalEntries = []
         if (Array.isArray(externalData.externalTimes)) {
@@ -88,7 +92,8 @@ export default function Demo() {
           if (v.plottable) dayTimeEntries = arr
         }
 
-        const videosById    = new Map(videos.map(v => [v._id, v]))
+        const videosById       = new Map(videos.map(v => [v._id, v]))
+        const guideCountryMap  = new Map((guides || []).map(g => [g.name, g.country]))
         const fullTimeline  = buildFullTimeline(videosById, watchHistory, externalEntries)
         const difficultyData = buildDifficultyData(fullTimeline)
         const appearances   = getFirstAppearances(fullTimeline)
@@ -96,13 +101,15 @@ export default function Demo() {
         const { slices: contentSlices, totalHours: contentTotalHours } =
           buildContentSplit(videosById, watchHistory, externalEntries)
         const guideData     = buildGuideData(videosById, watchHistory)
+        const countrySlices = buildCountryData(videosById, watchHistory, guideCountryMap)
         const { slices: guideSlices, totalHours: guidesTotalHours } = buildGuidesPieData(guideData)
         const tagData       = buildTagData(videosById, watchHistory, 20)
         const infoPanel     = buildInfoPanel(fullTimeline, difficultyData, guideData, tagData)
         const exportRows    = buildExportRows(videosById, watchHistory, externalEntries)
         const summaryRows   = buildSummaryRows(videosById, watchHistory, externalEntries)
         const today         = new Date().toISOString().slice(0, 10)
-        const dailyTimeData = buildDailyTimeData(dayTimeEntries)
+        const dailyTimeData      = buildDailyTimeData(dayTimeEntries)
+        const dsVsExternalPoints = buildDSvsExternalData(dayTimeEntries, externalEntries)
         const dayStats      = buildDayStats(dayTimeEntries, today)
         const totalHours    = fullTimeline.length
           ? fullTimeline[fullTimeline.length - 1].cumulativeHours
@@ -110,10 +117,12 @@ export default function Demo() {
 
         const result = {
           fullTimeline, videosById, difficultyData, appearances, allConsumptionPoints,
+          guideCountryMap, countrySlices,
           contentSlices, contentTotalHours, guideData, guideSlices, guidesTotalHours,
           tagData, infoPanel, exportRows, summaryRows,
           hasExternalData: externalEntries.length > 0,
           dailyPoints: dailyTimeData?.points ?? [],
+          dsVsExternalPoints,
           dayStats, totalHours,
           rawWatchedVideos: watchHistory,
           rawExternalEntries: externalEntries,
@@ -147,23 +156,26 @@ export default function Demo() {
     const filteredWatch    = filteredTimeline.filter(e => e.videoId != null).map(e => ({ watched: true, videoId: e.videoId }))
     const filteredExt      = filteredTimeline.filter(e => e._ext != null).map(e => e._ext)
 
-    const guideData    = buildGuideData(charts.videosById, filteredWatch)
+    const guideData     = buildGuideData(charts.videosById, filteredWatch)
     const { slices: guideSlices, totalHours: guidesTotalHours } = buildGuidesPieData(guideData)
-    const tagData      = buildTagData(charts.videosById, filteredWatch, 20)
+    const countrySlices = buildCountryData(charts.videosById, filteredWatch, charts.guideCountryMap)
+    const tagData       = buildTagData(charts.videosById, filteredWatch, 20)
     const { slices: contentSlices, totalHours: contentTotalHours } =
       buildContentSplit(charts.videosById, filteredWatch, filteredExt)
 
     const difficultyData    = charts.difficultyData.filter(d => inRange(d.x))
     const appearances       = charts.appearances.filter(a => inRange(a.cumulativeHours))
     const consumptionPoints = charts.allConsumptionPoints.filter(p => inRange(p.cumulativeHours))
-    const dailyPoints       = charts.dailyPoints.filter(p => inRange(p.cumulativeHours))
-    const infoPanel         = buildInfoPanel(filteredTimeline, difficultyData, guideData, tagData)
+    const dailyPoints        = charts.dailyPoints.filter(p => inRange(p.cumulativeHours))
+    const dsVsExternalPoints = charts.dsVsExternalPoints.filter(p => inRange(p.cumulativeHours))
+    const infoPanel          = buildInfoPanel(filteredTimeline, difficultyData, guideData, tagData)
 
     return {
       ...charts,
       guideData, guideSlices, guidesTotalHours,
+      countrySlices,
       tagData, contentSlices, contentTotalHours,
-      difficultyData, appearances, consumptionPoints, dailyPoints,
+      difficultyData, appearances, consumptionPoints, dailyPoints, dsVsExternalPoints,
       infoPanel, xMin: fromH,
     }
   }, [charts, fromLevel, toLevel]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -293,6 +305,10 @@ export default function Demo() {
                 xMin={filteredData.xMin}
               />
 
+              {charts.hasExternalData && filteredData.dsVsExternalPoints.length > 0 && (
+                <DSvsExternalChart points={filteredData.dsVsExternalPoints} />
+              )}
+
               <div className="chart-card">
                 <h2>Content Split by Time ({Math.round(filteredData.contentTotalHours)}h total)</h2>
                 <ContentSplitChart slices={filteredData.contentSlices} totalHours={filteredData.contentTotalHours} />
@@ -302,6 +318,13 @@ export default function Demo() {
                 <h2>Viewing by Guide ({Math.round(filteredData.guidesTotalHours)}h)</h2>
                 <GuidesPieChart slices={filteredData.guideSlices} totalHours={filteredData.guidesTotalHours} />
               </div>
+
+              {filteredData.countrySlices.length > 0 && (
+                <div className="chart-card">
+                  <h2>Viewing by Country / Dialect</h2>
+                  <CountryPieChart slices={filteredData.countrySlices} />
+                </div>
+              )}
 
               <div className="chart-card">
                 <h2>Hours Watched per Guide</h2>

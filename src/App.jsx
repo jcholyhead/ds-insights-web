@@ -15,10 +15,14 @@ import {
   buildDailyTimeData,
   buildDayStats,
   getAllConsumptionPoints,
+  buildCountryData,
+  buildDSvsExternalData,
 } from './utils/compute'
 import DifficultyChart from './components/DifficultyChart'
 import ContentSplitChart from './components/ContentSplitChart'
 import GuidesPieChart from './components/GuidesPieChart'
+import CountryPieChart from './components/CountryPieChart'
+import DSvsExternalChart from './components/DSvsExternalChart'
 import GuidesBarChart from './components/GuidesBarChart'
 import TagsBarChart from './components/TagsBarChart'
 import InfoPanel from './components/InfoPanel'
@@ -234,9 +238,9 @@ export default function App() {
         const r = await fetch(`/videos-${resolvedLang}.json`)
         if (!r.ok) throw new Error(`Failed to load video catalogue (${resolvedLang}): HTTP ${r.status}`)
         const data = await r.json()
-        videoCatalogues.current[resolvedLang] = data.videos
+        videoCatalogues.current[resolvedLang] = { videos: data.videos, guides: data.guides || [] }
       }
-      const videos = videoCatalogues.current[resolvedLang]
+      const { videos, guides } = videoCatalogues.current[resolvedLang]
 
       // ── Parse external time (optional) ─────────────────────────────
       let externalEntries = []
@@ -271,6 +275,7 @@ export default function App() {
 
       // ── Compute ────────────────────────────────────────────────────
       const videosById = new Map(videos.map(v => [v._id, v]))
+      const guideCountryMap = new Map(guides.map(g => [g.name, g.country]))
       const fullTimeline = buildFullTimeline(videosById, watchHistory, externalEntries)
       const difficultyData = buildDifficultyData(fullTimeline)
       const appearances = getFirstAppearances(fullTimeline)
@@ -278,13 +283,15 @@ export default function App() {
       const { slices: contentSlices, totalHours: contentTotalHours } =
         buildContentSplit(videosById, watchHistory, externalEntries)
       const guideData = buildGuideData(videosById, watchHistory)
+      const countrySlices = buildCountryData(videosById, watchHistory, guideCountryMap)
       const { slices: guideSlices, totalHours: guidesTotalHours } = buildGuidesPieData(guideData)
       const tagData = buildTagData(videosById, watchHistory, 20)
       const infoPanel = buildInfoPanel(fullTimeline, difficultyData, guideData, tagData)
       const exportRows = buildExportRows(videosById, watchHistory, externalEntries)
       const summaryRows = buildSummaryRows(videosById, watchHistory, externalEntries)
       const today = new Date().toISOString().slice(0, 10)
-      const dailyTimeData = buildDailyTimeData(dayTimeEntries)
+      const dailyTimeData      = buildDailyTimeData(dayTimeEntries)
+      const dsVsExternalPoints = buildDSvsExternalData(dayTimeEntries, externalEntries)
       const dayStats = buildDayStats(dayTimeEntries, today)
       const totalHours = fullTimeline.length
         ? fullTimeline[fullTimeline.length - 1].cumulativeHours
@@ -297,6 +304,8 @@ export default function App() {
         appearances,
         contentSlices,
         contentTotalHours,
+        guideCountryMap,
+        countrySlices,
         guideData,
         guideSlices,
         guidesTotalHours,
@@ -307,6 +316,7 @@ export default function App() {
         allConsumptionPoints,
         hasExternalData: externalEntries.length > 0,
         dailyPoints: dailyTimeData?.points ?? [],
+        dsVsExternalPoints,
         dayStats,
         totalHours,
         // Raw data stored for research uploads
@@ -352,6 +362,7 @@ export default function App() {
     // Recompute aggregated charts for the filtered range
     const guideData    = buildGuideData(charts.videosById, filteredWatch)
     const { slices: guideSlices, totalHours: guidesTotalHours } = buildGuidesPieData(guideData)
+    const countrySlices = buildCountryData(charts.videosById, filteredWatch, charts.guideCountryMap)
     const tagData      = buildTagData(charts.videosById, filteredWatch, 20)
     const { slices: contentSlices, totalHours: contentTotalHours } =
       buildContentSplit(charts.videosById, filteredWatch, filteredExt)
@@ -360,7 +371,8 @@ export default function App() {
     const difficultyData = charts.difficultyData.filter(d => inRange(d.x))
     const appearances         = charts.appearances.filter(a => inRange(a.cumulativeHours))
     const consumptionPoints   = charts.allConsumptionPoints.filter(p => inRange(p.cumulativeHours))
-    const dailyPoints    = charts.dailyPoints.filter(p => inRange(p.cumulativeHours))
+    const dailyPoints        = charts.dailyPoints.filter(p => inRange(p.cumulativeHours))
+    const dsVsExternalPoints = charts.dsVsExternalPoints.filter(p => inRange(p.cumulativeHours))
 
     // Recompute info panel from filtered data
     const infoPanel = buildInfoPanel(filteredTimeline, difficultyData, guideData, tagData)
@@ -368,12 +380,14 @@ export default function App() {
     return {
       ...charts,
       guideData, guideSlices, guidesTotalHours,
+      countrySlices,
       tagData,
       contentSlices, contentTotalHours,
       difficultyData,
       appearances,
       consumptionPoints,
       dailyPoints,
+      dsVsExternalPoints,
       infoPanel,
       xMin: fromH,
     }
@@ -715,6 +729,10 @@ export default function App() {
                 xMin={filteredData.xMin}
               />
 
+              {charts.hasExternalData && filteredData.dsVsExternalPoints.length > 0 && (
+                <DSvsExternalChart points={filteredData.dsVsExternalPoints} />
+              )}
+
               <div className="chart-card">
                 <h2>Content Split by Time ({Math.round(filteredData.contentTotalHours)}h total)</h2>
                 <ContentSplitChart
@@ -730,6 +748,13 @@ export default function App() {
                   totalHours={filteredData.guidesTotalHours}
                 />
               </div>
+
+              {filteredData.countrySlices.length > 0 && (
+                <div className="chart-card">
+                  <h2>Viewing by Country / Dialect</h2>
+                  <CountryPieChart slices={filteredData.countrySlices} />
+                </div>
+              )}
 
               <div className="chart-card">
                 <h2>Hours Watched per Guide</h2>

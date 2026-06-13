@@ -733,3 +733,74 @@ export function buildInfoPanel(fullTimeline, difficultyData, guideData, tagData)
     topTag: tagData[0] ?? null,
   }
 }
+
+/**
+ * Build per-day DS vs non-DS (external) minute breakdown.
+ * Uses dayTimeEntries as the source of truth for total minutes.
+ * External seconds for matching dates are subtracted to get DS minutes.
+ *
+ * Returns array of { date, ds, external, total, cumulativeHours }.
+ */
+export function buildDSvsExternalData(dayTimeEntries, externalEntries) {
+  const extByDate = new Map()
+  for (const e of externalEntries) {
+    if (e.type === 'initial' || !e.date || !e.timeSeconds || e.timeSeconds <= 0) continue
+    const desc = (e.description || '').trim()
+    if (!desc || desc === '__empty__') continue
+    extByDate.set(e.date, (extByDate.get(e.date) || 0) + e.timeSeconds)
+  }
+
+  const valid = dayTimeEntries
+    .filter(e => e.date && DATE_RE.test(e.date) && e.timeSeconds > 0)
+    .sort((a, b) => a.date.localeCompare(b.date))
+
+  let cumulativeMins = 0
+  return valid.map(e => {
+    const totalMins = e.timeSeconds / 60
+    const extMins   = Math.min((extByDate.get(e.date) || 0) / 60, totalMins)
+    const dsMins    = Math.max(0, totalMins - extMins)
+    cumulativeMins += totalMins
+    return {
+      date: e.date,
+      ds:       Math.round(dsMins    * 10) / 10,
+      external: Math.round(extMins   * 10) / 10,
+      total:    Math.round(totalMins * 10) / 10,
+      cumulativeHours: Math.round(cumulativeMins / 60 * 100) / 100,
+    }
+  })
+}
+
+/**
+ * Break down watch time by the country of each video's guide(s).
+ * guideCountryMap: Map<guideName, country> built from catalogue guides array.
+ * When a video has guides from multiple countries the seconds are split evenly.
+ *
+ * Returns array of { name (country), value (seconds), hours, pct } sorted desc.
+ */
+export function buildCountryData(videosById, watchHistory, guideCountryMap) {
+  const countrySeconds = new Map()
+
+  for (const w of watchHistory) {
+    if (!w.watched) continue
+    const video = videosById.get(w.videoId)
+    if (!video) continue
+    const seconds = video.duration - (video.endCutout || 0)
+    const guides = video.guides || []
+    const countries = [...new Set(guides.map(g => guideCountryMap.get(g)).filter(Boolean))]
+    if (!countries.length) continue
+    const share = seconds / countries.length
+    for (const country of countries) {
+      countrySeconds.set(country, (countrySeconds.get(country) || 0) + share)
+    }
+  }
+
+  const total = [...countrySeconds.values()].reduce((s, v) => s + v, 0)
+  return [...countrySeconds.entries()]
+    .map(([country, seconds]) => ({
+      name: country,
+      value: seconds,
+      hours: Math.round(seconds / 3600 * 10) / 10,
+      pct: total > 0 ? Math.round(seconds / total * 1000) / 10 : 0,
+    }))
+    .sort((a, b) => b.value - a.value)
+}
