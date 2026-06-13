@@ -29,6 +29,7 @@ import ResearchConsentModal from './components/ResearchConsentModal'
 import './App.css'
 
 const EXTENSION_STORE_URL = 'https://chromewebstore.google.com/detail/dreaming-insights-extensi/cafjfdpcidjkbpcjpgdkgoakjdiicbmh'
+const COFFEE_URL = 'https://buymeacoffee.com/dreaminginsights'
 
 const RESEARCH_API_URL = import.meta.env.VITE_RESEARCH_API_URL
 const RESEARCH_API_KEY = import.meta.env.VITE_RESEARCH_API_KEY
@@ -66,6 +67,7 @@ function ExtensionGate({ onManual }) {
           <h1>Dreaming Insights</h1>
           <p>Choose how you'd like to get started.</p>
           <a href="/demo.html" className="gate-demo-link">See an example first →</a>
+          <a href={COFFEE_URL} target="_blank" rel="noreferrer" className="gate-coffee-link">☕ Buy me a coffee</a>
         </div>
 
         <div className="extension-gate__options">
@@ -495,6 +497,9 @@ export default function App() {
             <h1>Dreaming Insights</h1>
             <p>Your immersion journey, visualised</p>
           </div>
+          <a href={COFFEE_URL} target="_blank" rel="noreferrer" className="coffee-btn">
+            ☕ Buy me a coffee
+          </a>
         </div>
       </header>
 

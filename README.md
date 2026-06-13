@@ -1,6 +1,6 @@
 # Dreaming Insights — Frontend
 
-A client-side analytics dashboard for [Dreaming Spanish](https://www.dreaminspanish.com) and [Dreaming French](https://www.dreamingfrench.com) learners. Paste or auto-import your watch history and get a detailed picture of your immersion journey.
+A client-side analytics dashboard for [Dreaming Spanish](https://www.dreamingspanish.com) and [Dreaming French](https://www.dreamingfrench.com) learners. Paste or auto-import your watch history and get a detailed picture of your immersion journey.
 
 Live at **[dreaminginsights.com](https://dreaminginsights.com)**
 

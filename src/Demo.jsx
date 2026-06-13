@@ -28,6 +28,7 @@ import DayStatsSection from './components/DayStatsSection'
 import './App.css'
 
 const EXTENSION_STORE_URL = 'https://chromewebstore.google.com/detail/dreaming-insights-extensi/cafjfdpcidjkbpcjpgdkgoakjdiicbmh'
+const COFFEE_URL = 'https://buymeacoffee.com/dreaminginsights'
 
 const LEVELS = [
   { level: 1, minHours: 0,    maxHours: 50   },
@@ -199,6 +200,9 @@ export default function Demo() {
             <h1>Dreaming Insights</h1>
             <p>Your immersion journey, visualised</p>
           </div>
+          <a href={COFFEE_URL} target="_blank" rel="noreferrer" className="coffee-btn">
+            ☕ Buy me a coffee
+          </a>
         </div>
       </header>
 

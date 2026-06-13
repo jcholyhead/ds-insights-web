@@ -30,9 +30,42 @@ header::before {
 
 .header-inner {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+}
+
+.coffee-btn {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 20px;
+  padding: 6px 14px;
+  text-decoration: none;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.coffee-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.gate-coffee-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.gate-coffee-link:hover {
+  color: #3949ab;
+  text-decoration: underline;
 }
 
 .header-icon {
