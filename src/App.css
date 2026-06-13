@@ -1316,6 +1316,51 @@ main {
   background: #e8eaf6;
 }
 
+/* ── Chart settings ── */
+
+.chart-settings-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  padding: 4px 7px;
+  color: #555;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.chart-settings-btn:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+}
+
+.chart-settings-panel {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  gap: 12px;
+}
+
+.chart-settings-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chart-settings-item input[type="checkbox"] {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 700px) {

@@ -67,8 +67,9 @@ function AppearanceLabel({ viewBox, name, atTop }) {
   )
 }
 
-const STORAGE_KEY = 'ds-stats-visible-sources'
-const PAGE_SIZE   = 25
+const STORAGE_KEY  = 'ds-stats-visible-sources'
+const SETTINGS_KEY = 'ds-stats-difficulty-settings'
+const PAGE_SIZE    = 25
 
 const CONSUMPTION_COLORS = [
   'rgba(255, 182, 193, 0.75)', // pink
@@ -99,6 +100,11 @@ function sourcesFromStorage(allNames) {
 
 export default function DifficultyChart({ difficultyData, appearances, consumptionPoints, hasExternalData, xMin = 0 }) {
   const [showFilter, setShowFilter] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
+  const [logScale, setLogScale] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}').logScale ?? false }
+    catch { return false }
+  })
   const [page, setPage] = useState(0)
   const [visibleSources, setVisibleSources] = useState(() => {
     const allNames = (appearances || []).map(a => a.name)
@@ -124,8 +130,43 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...visibleSources]))
   }, [visibleSources])
 
+  useEffect(() => {
+    try {
+      const prev = JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}')
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...prev, logScale }))
+    } catch {}
+  }, [logScale])
+
   // For each marker, look up the rolling average at that exact x position and
   // compare it to the Y midpoint. Label goes where there's more space.
+  const xAxisTicks = useMemo(() => {
+    const xMax = difficultyData.length ? difficultyData[difficultyData.length - 1].x : 100
+    const domainMin = logScale ? Math.max(1, xMin) : xMin
+
+    if (logScale) {
+      const candidates = [1, 10, 25, 50, 100, 150, 250, 500, 750, 1000, 1500]
+      return candidates.filter(t => t >= domainMin && t <= xMax * 1.01)
+    }
+
+    const range = xMax - domainMin
+    let step = 25
+    for (const s of [25, 50, 100, 150, 200, 250, 500]) {
+      if (range / s <= 14) { step = s; break }
+    }
+    const start = Math.ceil(domainMin / step) * step || step
+    const ticks = []
+    for (let t = start; t <= xMax; t += step) ticks.push(t)
+    return ticks
+  }, [difficultyData, xMin, logScale])
+
+  const yAxisTicks = useMemo(() => {
+    const vals = difficultyData.flatMap(d => [d.rating, d.rollingAvg, d.p90]).filter(v => v != null && v > 0)
+    const ceil = Math.ceil((vals.length ? Math.max(...vals) : 100) / 10) * 10
+    const ticks = []
+    for (let t = 0; t <= ceil; t += 10) ticks.push(t)
+    return ticks
+  }, [difficultyData])
+
   const { yMid, rollingAvgAtX } = useMemo(() => {
     const ratings = difficultyData.map(d => d.rating).filter(r => r != null)
     const mid = ratings.length
@@ -199,24 +240,47 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
     <div className="chart-card">
       <div className="chart-card__header">
         <h2>Video Difficulty Over Time</h2>
-        {hasAppearances && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <button
-              className="chart-filter-btn"
-              onClick={() => { setShowFilter(s => !s); setPage(0) }}
-              aria-expanded={showFilter}
-            >
-              Show external sources {showFilter ? '▲' : '▼'}
-            </button>
-            <span
-              className="chart-filter-info"
-              title="Places a vertical marker on the chart at the cumulative-hour position where you first logged time against each external content source."
-            >
-              ?
-            </span>
-          </div>
-        )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+          {hasAppearances && (
+            <>
+              <button
+                className="chart-filter-btn"
+                onClick={() => { setShowFilter(s => !s); setPage(0) }}
+                aria-expanded={showFilter}
+              >
+                Show external sources {showFilter ? '▲' : '▼'}
+              </button>
+              <span
+                className="chart-filter-info"
+                title="Places a vertical marker on the chart at the cumulative-hour position where you first logged time against each external content source."
+              >
+                ?
+              </span>
+            </>
+          )}
+          <button
+            className="chart-settings-btn"
+            onClick={() => setShowSettings(s => !s)}
+            aria-expanded={showSettings}
+            title="Chart settings"
+          >
+            ⚙
+          </button>
+        </div>
       </div>
+
+      {showSettings && (
+        <div className="chart-settings-panel">
+          <label className="chart-settings-item">
+            <input
+              type="checkbox"
+              checked={logScale}
+              onChange={e => setLogScale(e.target.checked)}
+            />
+            Logarithmic x-axis (log₁₀)
+          </label>
+        </div>
+      )}
 
       {!hasExternalData && (
         <p className="chart-note">X-axis shows DS watch hours only (no external time data).</p>
@@ -293,16 +357,24 @@ export default function DifficultyChart({ difficultyData, appearances, consumpti
           <XAxis
             type="number"
             dataKey="x"
-            domain={[xMin, difficultyData.length ? difficultyData[difficultyData.length - 1].x : 'dataMax']}
+            scale={logScale ? 'log' : 'linear'}
+            domain={[
+              logScale ? Math.max(1, xMin) : xMin,
+              difficultyData.length ? difficultyData[difficultyData.length - 1].x : 'dataMax',
+            ]}
+            allowDataOverflow
+            ticks={xAxisTicks}
             label={{
               value: 'Cumulative hours (DS + external)',
               position: 'insideBottom',
               offset: -20,
             }}
-            tickCount={10}
           />
           <YAxis
             yAxisId="main"
+            domain={[0, 'auto']}
+            allowDataOverflow
+            ticks={yAxisTicks}
             label={{
               value: 'Rating (0–100)',
               angle: -90,
