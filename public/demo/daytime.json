@@ -1,0 +1,697 @@
+[
+    {
+      "date": "2026-01-11",
+      "goalReached": true,
+      "timeSeconds": 7687
+    },
+    {
+      "date": "2026-01-12",
+      "goalReached": true,
+      "timeSeconds": 9093
+    },
+    {
+      "date": "2026-01-13",
+      "goalReached": true,
+      "timeSeconds": 11007
+    },
+    {
+      "date": "2026-01-14",
+      "goalReached": true,
+      "timeSeconds": 11165
+    },
+    {
+      "date": "2026-01-15",
+      "goalReached": true,
+      "timeSeconds": 8319
+    },
+    {
+      "date": "2026-01-16",
+      "goalReached": true,
+      "timeSeconds": 9199
+    },
+    {
+      "date": "2026-01-17",
+      "goalReached": true,
+      "timeSeconds": 14457
+    },
+    {
+      "date": "2026-01-18",
+      "goalReached": true,
+      "timeSeconds": 15177
+    },
+    {
+      "date": "2026-01-19",
+      "goalReached": true,
+      "timeSeconds": 9368
+    },
+    {
+      "date": "2026-01-20",
+      "goalReached": true,
+      "timeSeconds": 8628
+    },
+    {
+      "date": "2026-01-21",
+      "goalReached": true,
+      "timeSeconds": 9537
+    },
+    {
+      "date": "2026-01-22",
+      "goalReached": true,
+      "timeSeconds": 8474
+    },
+    {
+      "date": "2026-01-23",
+      "goalReached": true,
+      "timeSeconds": 8048
+    },
+    {
+      "date": "2026-01-24",
+      "goalReached": true,
+      "timeSeconds": 9655
+    },
+    {
+      "date": "2026-01-25",
+      "goalReached": true,
+      "timeSeconds": 11511
+    },
+    {
+      "date": "2026-01-26",
+      "goalReached": true,
+      "timeSeconds": 7424
+    },
+    {
+      "date": "2026-01-27",
+      "goalReached": true,
+      "timeSeconds": 8700
+    },
+    {
+      "date": "2026-01-28",
+      "goalReached": true,
+      "timeSeconds": 9242
+    },
+    {
+      "date": "2026-01-29",
+      "goalReached": true,
+      "timeSeconds": 7805
+    },
+    {
+      "date": "2026-01-30",
+      "goalReached": true,
+      "timeSeconds": 7337
+    },
+    {
+      "date": "2026-01-31",
+      "goalReached": true,
+      "timeSeconds": 10893
+    },
+    {
+      "date": "2026-02-01",
+      "goalReached": true,
+      "timeSeconds": 7649
+    },
+    {
+      "date": "2026-02-02",
+      "goalReached": true,
+      "timeSeconds": 11758
+    },
+    {
+      "date": "2026-02-03",
+      "goalReached": true,
+      "timeSeconds": 7637
+    },
+    {
+      "date": "2026-02-04",
+      "goalReached": true,
+      "timeSeconds": 11314
+    },
+    {
+      "date": "2026-02-05",
+      "goalReached": true,
+      "timeSeconds": 7768
+    },
+    {
+      "date": "2026-02-06",
+      "goalReached": true,
+      "timeSeconds": 8104
+    },
+    {
+      "date": "2026-02-07",
+      "goalReached": true,
+      "timeSeconds": 8911
+    },
+    {
+      "date": "2026-02-08",
+      "goalReached": true,
+      "timeSeconds": 8992
+    },
+    {
+      "date": "2026-02-09",
+      "goalReached": true,
+      "timeSeconds": 7460
+    },
+    {
+      "date": "2026-02-10",
+      "goalReached": true,
+      "timeSeconds": 7266
+    },
+    {
+      "date": "2026-02-11",
+      "goalReached": true,
+      "timeSeconds": 7594
+    },
+    {
+      "date": "2026-02-12",
+      "goalReached": true,
+      "timeSeconds": 7894
+    },
+    {
+      "date": "2026-02-13",
+      "goalReached": true,
+      "timeSeconds": 9184
+    },
+    {
+      "date": "2026-02-14",
+      "goalReached": true,
+      "timeSeconds": 8703
+    },
+    {
+      "date": "2026-02-15",
+      "goalReached": true,
+      "timeSeconds": 9375
+    },
+    {
+      "date": "2026-02-16",
+      "goalReached": true,
+      "timeSeconds": 7342
+    },
+    {
+      "date": "2026-02-17",
+      "goalReached": true,
+      "timeSeconds": 7530
+    },
+    {
+      "date": "2026-02-18",
+      "goalReached": true,
+      "timeSeconds": 7266
+    },
+    {
+      "date": "2026-02-19",
+      "goalReached": true,
+      "timeSeconds": 7593
+    },
+    {
+      "date": "2026-02-20",
+      "goalReached": false,
+      "timeSeconds": 806
+    },
+    {
+      "date": "2026-02-22",
+      "goalReached": false,
+      "timeSeconds": 1048
+    },
+    {
+      "date": "2026-02-23",
+      "goalReached": true,
+      "timeSeconds": 7322
+    },
+    {
+      "date": "2026-02-24",
+      "goalReached": true,
+      "timeSeconds": 9057
+    },
+    {
+      "date": "2026-02-25",
+      "goalReached": true,
+      "timeSeconds": 7430
+    },
+    {
+      "date": "2026-02-26",
+      "goalReached": true,
+      "timeSeconds": 9251
+    },
+    {
+      "date": "2026-02-27",
+      "goalReached": true,
+      "timeSeconds": 7496
+    },
+    {
+      "date": "2026-02-28",
+      "goalReached": true,
+      "timeSeconds": 7560
+    },
+    {
+      "date": "2026-03-01",
+      "goalReached": true,
+      "timeSeconds": 11055
+    },
+    {
+      "date": "2026-03-02",
+      "goalReached": true,
+      "timeSeconds": 8866
+    },
+    {
+      "date": "2026-03-03",
+      "goalReached": true,
+      "timeSeconds": 8402
+    },
+    {
+      "date": "2026-03-04",
+      "goalReached": true,
+      "timeSeconds": 9460
+    },
+    {
+      "date": "2026-03-05",
+      "goalReached": true,
+      "timeSeconds": 7532
+    },
+    {
+      "date": "2026-03-06",
+      "goalReached": true,
+      "timeSeconds": 7478
+    },
+    {
+      "date": "2026-03-08",
+      "goalReached": false,
+      "timeSeconds": 2372
+    },
+    {
+      "date": "2026-03-09",
+      "goalReached": false,
+      "timeSeconds": 326
+    },
+    {
+      "date": "2026-03-10",
+      "goalReached": false,
+      "timeSeconds": 543
+    },
+    {
+      "date": "2026-03-11",
+      "goalReached": false,
+      "timeSeconds": 366
+    },
+    {
+      "date": "2026-03-12",
+      "goalReached": false,
+      "timeSeconds": 317
+    },
+    {
+      "date": "2026-03-13",
+      "goalReached": false,
+      "timeSeconds": 352
+    },
+    {
+      "date": "2026-03-16",
+      "goalReached": false,
+      "timeSeconds": 732
+    },
+    {
+      "date": "2026-03-18",
+      "goalReached": false,
+      "timeSeconds": 2101
+    },
+    {
+      "date": "2026-03-19",
+      "goalReached": true,
+      "timeSeconds": 7407
+    },
+    {
+      "date": "2026-03-20",
+      "goalReached": true,
+      "timeSeconds": 7501
+    },
+    {
+      "date": "2026-03-21",
+      "goalReached": true,
+      "timeSeconds": 8295
+    },
+    {
+      "date": "2026-03-22",
+      "goalReached": true,
+      "timeSeconds": 7506
+    },
+    {
+      "date": "2026-03-23",
+      "goalReached": true,
+      "timeSeconds": 7680
+    },
+    {
+      "date": "2026-03-24",
+      "goalReached": true,
+      "timeSeconds": 10106
+    },
+    {
+      "date": "2026-03-25",
+      "goalReached": true,
+      "timeSeconds": 8025
+    },
+    {
+      "date": "2026-03-26",
+      "goalReached": true,
+      "timeSeconds": 12097
+    },
+    {
+      "date": "2026-03-27",
+      "goalReached": true,
+      "timeSeconds": 10925
+    },
+    {
+      "date": "2026-03-28",
+      "goalReached": true,
+      "timeSeconds": 8318
+    },
+    {
+      "date": "2026-03-29",
+      "goalReached": true,
+      "timeSeconds": 9278
+    },
+    {
+      "date": "2026-03-30",
+      "goalReached": true,
+      "timeSeconds": 9452
+    },
+    {
+      "date": "2026-03-31",
+      "goalReached": true,
+      "timeSeconds": 8382
+    },
+    {
+      "date": "2026-04-01",
+      "goalReached": true,
+      "timeSeconds": 7353
+    },
+    {
+      "date": "2026-04-02",
+      "goalReached": true,
+      "timeSeconds": 8317
+    },
+    {
+      "date": "2026-04-03",
+      "goalReached": true,
+      "timeSeconds": 10211
+    },
+    {
+      "date": "2026-04-04",
+      "goalReached": true,
+      "timeSeconds": 11035
+    },
+    {
+      "date": "2026-04-05",
+      "goalReached": true,
+      "timeSeconds": 9370
+    },
+    {
+      "date": "2026-04-06",
+      "goalReached": true,
+      "timeSeconds": 8753
+    },
+    {
+      "date": "2026-04-13",
+      "goalReached": true,
+      "timeSeconds": 7219
+    },
+    {
+      "date": "2026-04-14",
+      "goalReached": true,
+      "timeSeconds": 7331
+    },
+    {
+      "date": "2026-04-15",
+      "goalReached": true,
+      "timeSeconds": 8922
+    },
+    {
+      "date": "2026-04-16",
+      "goalReached": true,
+      "timeSeconds": 7353
+    },
+    {
+      "date": "2026-04-17",
+      "goalReached": false,
+      "timeSeconds": 1020
+    },
+    {
+      "date": "2026-04-20",
+      "goalReached": true,
+      "timeSeconds": 8143
+    },
+    {
+      "date": "2026-04-21",
+      "goalReached": true,
+      "timeSeconds": 7374
+    },
+    {
+      "date": "2026-04-22",
+      "goalReached": true,
+      "timeSeconds": 7812
+    },
+    {
+      "date": "2026-04-23",
+      "goalReached": true,
+      "timeSeconds": 7344
+    },
+    {
+      "date": "2026-04-24",
+      "goalReached": false,
+      "timeSeconds": 1
+    },
+    {
+      "date": "2026-04-26",
+      "goalReached": false,
+      "timeSeconds": 2
+    },
+    {
+      "date": "2026-04-27",
+      "goalReached": true,
+      "timeSeconds": 7630
+    },
+    {
+      "date": "2026-04-28",
+      "goalReached": true,
+      "timeSeconds": 7499
+    },
+    {
+      "date": "2026-04-29",
+      "goalReached": true,
+      "timeSeconds": 7386
+    },
+    {
+      "date": "2026-04-30",
+      "goalReached": true,
+      "timeSeconds": 7385
+    },
+    {
+      "date": "2026-05-01",
+      "goalReached": true,
+      "timeSeconds": 7230
+    },
+    {
+      "date": "2026-05-02",
+      "goalReached": true,
+      "timeSeconds": 10982
+    },
+    {
+      "date": "2026-05-03",
+      "goalReached": true,
+      "timeSeconds": 12101
+    },
+    {
+      "date": "2026-05-04",
+      "goalReached": true,
+      "timeSeconds": 7365
+    },
+    {
+      "date": "2026-05-05",
+      "goalReached": true,
+      "timeSeconds": 7800
+    },
+    {
+      "date": "2026-05-06",
+      "goalReached": true,
+      "timeSeconds": 7440
+    },
+    {
+      "date": "2026-05-07",
+      "goalReached": true,
+      "timeSeconds": 7476
+    },
+    {
+      "date": "2026-05-08",
+      "goalReached": true,
+      "timeSeconds": 8390
+    },
+    {
+      "date": "2026-05-09",
+      "goalReached": true,
+      "timeSeconds": 7877
+    },
+    {
+      "date": "2026-05-10",
+      "goalReached": true,
+      "timeSeconds": 7225
+    },
+    {
+      "date": "2026-05-11",
+      "goalReached": true,
+      "timeSeconds": 10838
+    },
+    {
+      "date": "2026-05-12",
+      "goalReached": true,
+      "timeSeconds": 9060
+    },
+    {
+      "date": "2026-05-13",
+      "goalReached": true,
+      "timeSeconds": 7509
+    },
+    {
+      "date": "2026-05-14",
+      "goalReached": true,
+      "timeSeconds": 7678
+    },
+    {
+      "date": "2026-05-15",
+      "goalReached": true,
+      "timeSeconds": 13137
+    },
+    {
+      "date": "2026-05-16",
+      "goalReached": true,
+      "timeSeconds": 11126
+    },
+    {
+      "date": "2026-05-17",
+      "goalReached": true,
+      "timeSeconds": 7440
+    },
+    {
+      "date": "2026-05-18",
+      "goalReached": true,
+      "timeSeconds": 8881
+    },
+    {
+      "date": "2026-05-19",
+      "goalReached": true,
+      "timeSeconds": 11700
+    },
+    {
+      "date": "2026-05-20",
+      "goalReached": true,
+      "timeSeconds": 9233
+    },
+    {
+      "date": "2026-05-21",
+      "goalReached": true,
+      "timeSeconds": 11540
+    },
+    {
+      "date": "2026-05-22",
+      "goalReached": true,
+      "timeSeconds": 12899
+    },
+    {
+      "date": "2026-05-23",
+      "goalReached": true,
+      "timeSeconds": 11640
+    },
+    {
+      "date": "2026-05-24",
+      "goalReached": true,
+      "timeSeconds": 10903
+    },
+    {
+      "date": "2026-05-25",
+      "goalReached": true,
+      "timeSeconds": 16249
+    },
+    {
+      "date": "2026-05-26",
+      "goalReached": true,
+      "timeSeconds": 8160
+    },
+    {
+      "date": "2026-05-27",
+      "goalReached": true,
+      "timeSeconds": 7570
+    },
+    {
+      "date": "2026-05-28",
+      "goalReached": true,
+      "timeSeconds": 14514
+    },
+    {
+      "date": "2026-05-29",
+      "goalReached": true,
+      "timeSeconds": 8372
+    },
+    {
+      "date": "2026-05-30",
+      "goalReached": true,
+      "timeSeconds": 11417
+    },
+    {
+      "date": "2026-05-31",
+      "goalReached": true,
+      "timeSeconds": 7382
+    },
+    {
+      "date": "2026-06-01",
+      "goalReached": true,
+      "timeSeconds": 12190
+    },
+    {
+      "date": "2026-06-02",
+      "goalReached": true,
+      "timeSeconds": 12681
+    },
+    {
+      "date": "2026-06-03",
+      "goalReached": true,
+      "timeSeconds": 13149
+    },
+    {
+      "date": "2026-06-04",
+      "goalReached": true,
+      "timeSeconds": 16460
+    },
+    {
+      "date": "2026-06-05",
+      "goalReached": true,
+      "timeSeconds": 12240
+    },
+    {
+      "date": "2026-06-06",
+      "goalReached": true,
+      "timeSeconds": 12265
+    },
+    {
+      "date": "2026-06-07",
+      "goalReached": true,
+      "timeSeconds": 13704
+    },
+    {
+      "date": "2026-06-08",
+      "goalReached": true,
+      "timeSeconds": 12386
+    },
+    {
+      "date": "2026-06-09",
+      "goalReached": true,
+      "timeSeconds": 12451
+    },
+    {
+      "date": "2026-06-10",
+      "goalReached": true,
+      "timeSeconds": 12166
+    },
+    {
+      "date": "2026-06-11",
+      "goalReached": true,
+      "timeSeconds": 12240
+    },
+    {
+      "date": "2026-06-12",
+      "goalReached": true,
+      "timeSeconds": 16848
+    }
+  ]

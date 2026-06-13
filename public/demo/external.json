@@ -1,0 +1,3737 @@
+{
+    "externalTimes": [
+      {
+        "date": "2026-01-11",
+        "description": "__empty__",
+        "id": "17681525959690.9977417689514578",
+        "timeSeconds": 0,
+        "type": "initial"
+      },
+      {
+        "date": "2026-01-18",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "176875658674328ba28c46305c",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1768844391932addb603aaaa52",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1768855142553d5a355722596a",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17688621704363414894e59c458",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-21",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "176903286582315f94e09fdd0b",
+        "timeSeconds": 480,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-22",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17690869037129b756deea68ca",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-22",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17691071112320c52194b73f5",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-22",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1769116841691b30cbb642167b8",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-23",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1769197211550cc47fd53f5cb18",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-24",
+        "description": "Cuentame\n",
+        "externalVideoUrl": "",
+        "id": "1769262428200c63969b4f5089",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1769279167420d9e31fe4401a58",
+        "timeSeconds": 2100,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-25",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "1769370292306807c808f95be18",
+        "timeSeconds": 3060,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1769449330579ba4ec3a1fbaec8",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-27",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "1769474269412317148a50bdf68",
+        "timeSeconds": 240,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-28",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "17696425527074af39ffe316a98",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-30",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17698058863569a7dd7b6d4de",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-30",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "1769807781666b8655066362228",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Organic Spanish",
+        "externalVideoUrl": "",
+        "id": "17698193547551c2f5f005fea1",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Spanish a la Chilena",
+        "externalVideoUrl": "",
+        "id": "17698200305135b2e4328a273b8",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Espanol con Ali",
+        "externalVideoUrl": "",
+        "id": "17698204590465838a3c3017598",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "1769821176269f7daf52db3d43",
+        "timeSeconds": 300,
+        "type": "listening"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1769873407645cd8618b2a059d8",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1769877182211d72ac2c433db58",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-01-31",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1769903582392c196f2a563af6",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-01",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1769960224884196b77aa754ce",
+        "timeSeconds": 1140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-01",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "1769963962315660387b521e148",
+        "timeSeconds": 660,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-01",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1769967857533001a018577416",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-02",
+        "description": "Comprehensible Spanish",
+        "externalVideoUrl": "",
+        "id": "1770060025111c0438c2e478088",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-02",
+        "description": "Organic Spanish",
+        "externalVideoUrl": "",
+        "id": "1770060761406623e0f0dbfbf6",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-02",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770067414997a8898b4a981bf8",
+        "timeSeconds": 2880,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-02",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770072935326086b11ce3fe6f",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-02",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770076338889989eba603897e8",
+        "timeSeconds": 2580,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177007720216058b5f908f929c",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17701380557206532d8abfcb91",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177013958024098f86d527f6cd8",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17701515142274a6f8a5a725e5",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-04",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177016555338467ef84a50045c",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-04",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177016883934245ef6a6199fa8",
+        "timeSeconds": 3180,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-04",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1770224401088a0b5e69b900ed8",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-04",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770233199973438e057cba51",
+        "timeSeconds": 3600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-05",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770332971711c76013edf0b1f",
+        "timeSeconds": 2400,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-06",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17703788950139372e38ace1d1",
+        "timeSeconds": 1020,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-06",
+        "description": "Spanish after hours",
+        "externalVideoUrl": "",
+        "id": "1770419323430f8bf8a14fca768",
+        "timeSeconds": 480,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-07",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1770488066158726642710b1d58",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-09",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177065793166361b38d8c8d5388",
+        "timeSeconds": 2820,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-10",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1770726166082c6459c53353a78",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-10",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1770733192331d55fe2e5b2a02",
+        "timeSeconds": 2220,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-10",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "1770744253990bf789b1bc7b82",
+        "timeSeconds": 2520,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-11",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "177082846209360b4472796b11",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-12",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "177092821270638015a711f60b",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-12",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17709371530833987fa16bf7608",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-13",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1771014445539cd92ff2e4c7ce",
+        "timeSeconds": 6000,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-13",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1771025300104054ea33b131368",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-14",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "1771078080676d3ed2c0659f568",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-14",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17710902585720a0e85ddede378",
+        "timeSeconds": 2400,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-14",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177111228309711d4fb3760c028",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-15",
+        "description": "Dayis Cubero",
+        "externalVideoUrl": "",
+        "id": "1771187821535c0250953f2aaa8",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-15",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "1771189141233be46f3a1223318",
+        "timeSeconds": 360,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-15",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "1771192774210cdafdbb442a08",
+        "timeSeconds": 300,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-17",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17713475218304e54fd655ab85",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-17",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "1771411505478d77530219e5fb8",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-17",
+        "description": "Dayis Cubero",
+        "externalVideoUrl": "",
+        "id": "17714115613914c6f73b2b2ea3",
+        "timeSeconds": 1020,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-17",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "1771411618584d31f19768a4e3",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-19",
+        "description": "Eres tú, Maria",
+        "externalVideoUrl": "",
+        "id": "17714633445536bf5b260138538",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-19",
+        "description": "Eres tú, Maria",
+        "externalVideoUrl": "",
+        "id": "177152079017384d0307709e578",
+        "timeSeconds": 3300,
+        "type": "watching"
+      },
+      {
+        "date": "2026-02-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17715441714192e41bc9a5f594",
+        "timeSeconds": 2220,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-23",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17718785933270.8164484962426939",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17719556111560.955331320463207",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-24",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17719556622070.8346194612580862",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17719630659110.13035496635394048",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17720211710750.5517499828044208",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17720407839690.9638704052563642",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17720470397400.09274822049813729",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17720559880340.6041399474021297",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17721094890600.9367514015278072",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17721358944510.47238161959216735",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17721481216380.5437153349614167",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-27",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17722243861020.5570165471237617",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-28",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17722815824440.4614427072021611",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-02-28",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17723067875890.44264419343867145",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-01",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17723668187200.9551827640314401",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-01",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17723760625680.7305797735252468",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-01",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17723884832530.7260665332102808",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-01",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17723951160380.8977199386448697",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-01",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17723973783240.27423598792784365",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "17724450891720.08802643648103431",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17724454547720.8757235326848551",
+        "timeSeconds": 420,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17724622461140.6481628487551799",
+        "timeSeconds": 2040,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "How to start Spanish",
+        "externalVideoUrl": "",
+        "id": "1772479755896bf6a7c2d4c60a8",
+        "timeSeconds": 420,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "17724809558900.6259690735361706",
+        "timeSeconds": 480,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17724817382180.8021508754071899",
+        "timeSeconds": 360,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17724832249740.6633083222986615",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-02",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17724913546800.1271101278132592",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-03",
+        "description": "How to start Spanish",
+        "externalVideoUrl": "",
+        "id": "17724968717576a886dcbf7213",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-03",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17725575215528dd29321114688",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-03",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17725721018780.13700875643248261",
+        "timeSeconds": 480,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-03",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17725721197410.36025901415680883",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-04",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17726495768940.38910456932676574",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-04",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17726604821090.5047053880620618",
+        "timeSeconds": 2340,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-04",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17726612330220.37687836368479316",
+        "timeSeconds": 660,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-05",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17727205253620.45073349328011125",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-05",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17727217214520.04480812354891205",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-05",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17727302978350.4485383218552692",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-06",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17728097697760.1642316859639796",
+        "timeSeconds": 2220,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-06",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17728165553360.04252689053746448",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-06",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17728320657290.1297972887232113",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-06",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17728345162220.2271777028167782",
+        "timeSeconds": 420,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17739278597940.7889097797894542",
+        "timeSeconds": 1320,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17739444664190.7126402688399716",
+        "timeSeconds": 420,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17739517933040.07147309290572114",
+        "timeSeconds": 1440,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17739577820750.20972739660464393",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Dayis Cubero ",
+        "externalVideoUrl": "",
+        "id": "17739592302900.6824765794176194",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Andrea la Mexicana",
+        "externalVideoUrl": "",
+        "id": "17739597022880.2441989003793476",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-19",
+        "description": "Spanish Boost with Mila ",
+        "externalVideoUrl": "",
+        "id": "17739611626940.5296734911631849",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-20",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17740076413000.19851612848021585",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-20",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "17740393742850.5280677101725071",
+        "timeSeconds": 4920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-20",
+        "description": "Espanol con Ali",
+        "externalVideoUrl": "https://www.youtube.com/watch?v=ooCHhK9hZDg",
+        "id": "177404247558854c562813ce328",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-21",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17740989771410.13998264810873537",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-21",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17741074200270.44079595531950494",
+        "timeSeconds": 2760,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-21",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17741130317300.14926111075817874",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-21",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17741159678600.3850012166502967",
+        "timeSeconds": 480,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-21",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17741210269500.05543469371108624",
+        "timeSeconds": 1320,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-22",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "https://www.youtube.com/watch?v=ThUjikgzKmc",
+        "id": "17741995723173968f67b35076",
+        "timeSeconds": 1020,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-22",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17742073392380.013807477670428532",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-22",
+        "description": "Lyke Espanol",
+        "externalVideoUrl": "",
+        "id": "177421453317095b2c37d287bd8",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-22",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17742175590680.6191864134332208",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17742676786010.9347685171298747",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Hablar Espanol con Jenny",
+        "externalVideoUrl": "",
+        "id": "17742869826461b0d6a02fc149",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17742880275770.5518335091838693",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17742981641200.833397676763781",
+        "timeSeconds": 1560,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "https://www.youtube.com/watch?v=CBebEPW4KUI",
+        "id": "1774304538576c90f547c08a7e8",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-23",
+        "description": "Espanol con Ali",
+        "externalVideoUrl": "",
+        "id": "17743067125286a4e253f7c34c",
+        "timeSeconds": 720,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17743708264350.31542660297245523",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17743722202850.7543998541893316",
+        "timeSeconds": 1320,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17743730536730.8395493737082258",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17743757669920.6409291654222491",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17743789977210.5321251144456918",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17743790051390.04714797849584516",
+        "timeSeconds": 480,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "17743876491520f079dcc5c5ed",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17743927611560.8193909772441031",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17743943831920.5725051395526157",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-24",
+        "description": "Dayis Cubero",
+        "externalVideoUrl": "",
+        "id": "1774396461950181c4dce5e4ea",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-25",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "17744346948724c1fa488f0b188",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17744404058110.16349234002748653",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-25",
+        "description": "Hablar Espanol con Jenny",
+        "externalVideoUrl": "",
+        "id": "17744611848133321af5203238",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-25",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17744678430330.9514927447339195",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-25",
+        "description": "Cuentame",
+        "externalVideoUrl": "",
+        "id": "1774483860114bb316f72f2c978",
+        "timeSeconds": 1320,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17745256934760.9421204645386706",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17745440886530.8167978804947842",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "177455113824531898fd29c99f",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17745564654600.34742820866710417",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Hablar Espanol con Jenny",
+        "externalVideoUrl": "",
+        "id": "1774561912648290da2f0be3c38",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Spanish Cafe",
+        "externalVideoUrl": "",
+        "id": "1774562991265d93820a4679da",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "17745668093368f219c18c52ef8",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-26",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "1774568421600b062975b3d0ba",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "17746094097083e2561c398b588",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17746170475590.5519366970355541",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Languatalk ",
+        "externalVideoUrl": "",
+        "id": "17746316377730.464290657860822",
+        "timeSeconds": 2100,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17746417526320.7360017242821945",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17746417606080.6211680528071436",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Spanish with Josy",
+        "externalVideoUrl": "",
+        "id": "17746531680470.6776249114454226",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-27",
+        "description": "Conversations in Spanish",
+        "externalVideoUrl": "",
+        "id": "17746553366056fc4900766a45",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-28",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17747037429950.787618671886168",
+        "timeSeconds": 1440,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-28",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17747229279510.0920292394285147",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-28",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17747248057720.8812887897826164",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-28",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17747255682470.46397428811235014",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-29",
+        "description": "Spanish with Josy ",
+        "externalVideoUrl": "",
+        "id": "17747887829670.29327812856814445",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-29",
+        "description": "How to start Spanish ",
+        "externalVideoUrl": "",
+        "id": "17748033882890.23309305128305394",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-29",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17748134716980.4006527259180345",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-29",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17748200598840.3157099158595373",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-29",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "17748201086573091ccdc13fd2",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17748742457310.3461149151341246",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17748967525588623a06dd7b208",
+        "timeSeconds": 1980,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "17748975426667a55696b2f22",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Espanol con Ali",
+        "externalVideoUrl": "",
+        "id": "177490609627058cec3b0f22d1",
+        "timeSeconds": 300,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "1774907766246975fa123a05f68",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17749096094030.37699187613321766",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-30",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17749103796270.998926149363196",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-31",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "177497955862493f85c23060dd8",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-31",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "1774979575979461b3ac546edb",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-31",
+        "description": "Conversations in Spanish ",
+        "externalVideoUrl": "",
+        "id": "17749854642630.9864263114261138",
+        "timeSeconds": 2100,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-31",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17749874961660.03172935702439038",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-03-31",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17749974534960.22962112088193887",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-01",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17750595876300.8046782957417769",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-01",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "17750652953760.6000271520927365",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-01",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "1775082755027231e48c00a6898",
+        "timeSeconds": 2220,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Espanol a la Mexicana ",
+        "externalVideoUrl": "",
+        "id": "17750874018230.9246900604491138",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17751259273830.12594403468012919",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Chill Spanish",
+        "externalVideoUrl": "",
+        "id": "177513291692575ff98433fa2e",
+        "timeSeconds": 240,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "17751517517738c6f7252b45b18",
+        "timeSeconds": 840,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17751587749780.2816580744471879",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-02",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17751587878300.9722555689701676",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-03",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17752162065810.024550448300911267",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-03",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17752435250850.23158215636909357",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-03",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17752447006580.015396386120882554",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-03",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17752464423070.05713730420397698",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-03",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "17752522564660125b32ec13848",
+        "timeSeconds": 1860,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-04",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "1775320101236dda5aee42e4e88",
+        "timeSeconds": 5400,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-04",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "17753426860001b4e8b1a0b6628",
+        "timeSeconds": 2760,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Espanol con Olga y Miguel",
+        "externalVideoUrl": "",
+        "id": "177538280712567f9dcbd825688",
+        "timeSeconds": 2220,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17753880117860.9173969232654084",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Easy Spanish",
+        "externalVideoUrl": "",
+        "id": "177539798940264866ecdca2588",
+        "timeSeconds": 540,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Spanish by Gala",
+        "externalVideoUrl": "",
+        "id": "17753992227752f850a39d32348",
+        "timeSeconds": 1140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Spanish after hours",
+        "externalVideoUrl": "",
+        "id": "17754022254045f123ecb3bfe58",
+        "timeSeconds": 840,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "177542704692188f1d998f07018",
+        "timeSeconds": 1140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-05",
+        "description": "Hablar Espanol con Jenny",
+        "externalVideoUrl": "",
+        "id": "1775427983624838c032375f0f8",
+        "timeSeconds": 720,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-06",
+        "description": "Espanol con Olga y Miguel",
+        "externalVideoUrl": "",
+        "id": "1775493738725dca81d08de2108",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-06",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "17755134236767d05599d51b1e",
+        "timeSeconds": 5580,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-06",
+        "description": "Espanol con Olga y Miguel",
+        "externalVideoUrl": "",
+        "id": "17755167327712310966d6d66d",
+        "timeSeconds": 960,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-13",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17761088912000.5089037446844881",
+        "timeSeconds": 5280,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-14",
+        "description": "Espanol con Olga y Miguel",
+        "externalVideoUrl": "",
+        "id": "1776194452701a2ecdb1c55b65",
+        "timeSeconds": 2040,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-14",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "1776196692734914c6967dc9cd8",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-14",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "1776203511034cf0aec726f73f8",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-15",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17762803717790.07856260208864131",
+        "timeSeconds": 4560,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-15",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17762803790040.4623487373269063",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-16",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17763646882090.07600879725480468",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-17",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17764265969350.6385388656523795",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-20",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17766875024730.5195753948679503",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-20",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17767043550120.15470311538065998",
+        "timeSeconds": 420,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-20",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17767121705860.9771421943538854",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-20",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17767121816620.01304045798780876",
+        "timeSeconds": 240,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-20",
+        "description": "Spanish Boost with Mila",
+        "externalVideoUrl": "",
+        "id": "17767229628973601cfbd97844",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-04-21",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17767717192850.5605921774502992",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-21",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17767942470020.0262485925654584",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-21",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17767984925220.05285122950806685",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-21",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "177680716239027c819f2e8f9a8",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-22",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17768629098190.21090145952894018",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-22",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17768833070870.7647952875352382",
+        "timeSeconds": 720,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-22",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17768865821830.38474725389432146",
+        "timeSeconds": 2940,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-22",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17768874917050.42877741544315395",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-23",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17769539560090.9290810622882001",
+        "timeSeconds": 2160,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-23",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17769655965830.9753277950593656",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-23",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17769737080200.19120714047731366",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-23",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17769764490250.031827803696506084",
+        "timeSeconds": 2580,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-27",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17773058714250.6585995402581989",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-27",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17773151705070.6205594408842726",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-27",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17773164922810.7206707399846846",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-28",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "17773821497906c489fd4f2e29",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-28",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17774053261620.9542244661562151",
+        "timeSeconds": 2820,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-29",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17774651904040.6226247621681262",
+        "timeSeconds": 2160,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-29",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17774773195320.5096223703360028",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-29",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17774939551740.7024442977472409",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-30",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17775519023530.020038503237633686",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-30",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17775519095700.1882356734641998",
+        "timeSeconds": 360,
+        "type": "listening"
+      },
+      {
+        "date": "2026-04-30",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17775814301640.317131753609554",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-01",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "1777650914005fa46d4096fb3f8",
+        "timeSeconds": 2700,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-01",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17776601778730.6349505557595934",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-01",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17776655752660.957524119384403",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17777202137754282addc07e0d8",
+        "timeSeconds": 2460,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Learn Spanish and go",
+        "externalVideoUrl": "",
+        "id": "17777232283630.00106030768944284",
+        "timeSeconds": 1380,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17777413896130.15399397591941408",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "SBG ",
+        "externalVideoUrl": "",
+        "id": "17777513420260.704989515285896",
+        "timeSeconds": 2700,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Spanish Gitana",
+        "externalVideoUrl": "",
+        "id": "1777756275979eba8db672b5a5",
+        "timeSeconds": 540,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Blanca to go",
+        "externalVideoUrl": "",
+        "id": "177775702917829c1681e2d6338",
+        "timeSeconds": 480,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "177775947052117c13b4acc46a",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-02",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "17777605454343199878270497",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "17778034775803d901b74477cb",
+        "timeSeconds": 1080,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "17778061750305a74b3dced11a",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "Espanol intermedio",
+        "externalVideoUrl": "",
+        "id": "17778079352760.014685087148820778",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "177783017809954c06db95dc6f",
+        "timeSeconds": 3780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "1777835406008e04d5dd37a5058",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-03",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17778396122100.2044700386286942",
+        "timeSeconds": 2700,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-04",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "177788627446476fabae38cde4",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-04",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "1777911930762de5bd42332f188",
+        "timeSeconds": 2220,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-04",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "1777912405814a8408aa153584",
+        "timeSeconds": 720,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-04",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17779153891940.9135185761789918",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-04",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17779174446700.2335422563698354",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-05",
+        "description": "Juega con Juarez",
+        "externalVideoUrl": "",
+        "id": "1777975469798ceb3765589e868",
+        "timeSeconds": 960,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-05",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1777998399906335dab873ece9",
+        "timeSeconds": 3900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-05",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "1778001068845bcb2b1353c6f2",
+        "timeSeconds": 1140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-05",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17780045012450.3501596216306985",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-06",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17780872340935e56d97ebc3de",
+        "timeSeconds": 2580,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-06",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "177808724134290e5e31f353958",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-06",
+        "description": "Learn Spanish and go",
+        "externalVideoUrl": "",
+        "id": "1778097812393d371632a2140f8",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-06",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "1778101664659f513cff7457378",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-06",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "177810210602365eee0aa749938",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-07",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "1778145885623e20abcc2f3c4d8",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-07",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17781767866290.2537867355439992",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-07",
+        "description": "Espanol intermedio",
+        "externalVideoUrl": "",
+        "id": "17781767997040.4196179801646332",
+        "timeSeconds": 780,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-07",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "1778179795079214d375a8b2dd8",
+        "timeSeconds": 3120,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "177823770040550262158494168",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Hola Spanish",
+        "externalVideoUrl": "",
+        "id": "17782518937485886bbadb6c9a8",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "1778257063358ca04d8f75da228",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Destinos",
+        "externalVideoUrl": "",
+        "id": "1778260932003db6a524629c91",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17782636251640.4143388043963196",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "1778276993958d45c43eb744688",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-08",
+        "description": "MedaYork",
+        "externalVideoUrl": "",
+        "id": "17782784511473f39b60b1bf93",
+        "timeSeconds": 1140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-09",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17783442527300.1458982963304888",
+        "timeSeconds": 4020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-09",
+        "description": "MedaYork",
+        "externalVideoUrl": "",
+        "id": "1778357554356d7bee3d66775e8",
+        "timeSeconds": 1200,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-09",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17783608579050.05330032018678107",
+        "timeSeconds": 840,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-10",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "17784235318552e644e57a8c0c",
+        "timeSeconds": 1320,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-10",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17784311634250.7572291635576299",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-10",
+        "description": "My Spanish flow",
+        "externalVideoUrl": "",
+        "id": "17784337240620e88a72c033a48",
+        "timeSeconds": 840,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-10",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17784348886110.4665739627296844",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-10",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "17784403219880ae7c030ce1fa8",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "177845669153260028843d2fac8",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17785009731740.5146740327331892",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "17785043925419df9181ef9013",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1778508130150b7c6a026336038",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Destinos",
+        "externalVideoUrl": "",
+        "id": "17785175745240d81421ce7bb28",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17785231636680.8422280347713592",
+        "timeSeconds": 2340,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-11",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1778535240145a69daf0ad07f18",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Espanol con Juan",
+        "externalVideoUrl": "",
+        "id": "177858039251132197b9255dc",
+        "timeSeconds": 840,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Erre que ELE",
+        "externalVideoUrl": "",
+        "id": "1778585599599a969375e742eb8",
+        "timeSeconds": 1020,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17785895950580.6951367329256041",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17786032222220.6554603975689276",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Hola Spanish ",
+        "externalVideoUrl": "",
+        "id": "17786063279910.8361250491111595",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Hola Spanish ",
+        "externalVideoUrl": "",
+        "id": "17786080694140.2156141414175746",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "Espanol con Olga y Miguel ",
+        "externalVideoUrl": "",
+        "id": "17786239624600.4471088390502507",
+        "timeSeconds": 1080,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "CuriosaMente",
+        "externalVideoUrl": "",
+        "id": "17786249984490.48520765269296967",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-12",
+        "description": "CuriosaMente ",
+        "externalVideoUrl": "",
+        "id": "17786259108850.26736172472150793",
+        "timeSeconds": 540,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-13",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "1778664808265cb45ad6445e45",
+        "timeSeconds": 720,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-13",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17786753834540.31531901287253095",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-13",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17786866396440.7466228479364626",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-13",
+        "description": "CuriosaMente ",
+        "externalVideoUrl": "",
+        "id": "17786913736920.41173930974739525",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-13",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17786956714270.333881813931997",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-14",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17787612965080.4119217756049124",
+        "timeSeconds": 540,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-14",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17787797284150.3955381489172303",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-14",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17787867337800.31140650866825365",
+        "timeSeconds": 1980,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-14",
+        "description": "Hola Spanish ",
+        "externalVideoUrl": "",
+        "id": "17787918902730.5200001996966973",
+        "timeSeconds": 540,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Dream Music School",
+        "externalVideoUrl": "",
+        "id": "1778840637397471d4db8230558",
+        "timeSeconds": 960,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17788504016330.9221301037394906",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Blood and marble ",
+        "externalVideoUrl": "",
+        "id": "17788517688520.9020187413554224",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17788628472230.2577682435266908",
+        "timeSeconds": 1860,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "177886580879689f9ceac2d6ec",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "177886930382954e4cb5d5ee748",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17788760937530.5607709885392537",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-15",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1778885396283e38ee63a3ef798",
+        "timeSeconds": 1860,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17789383885280.7199568492308557",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17789397040210.5188977222676217",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17789491836480.005784809432379226",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17789572748910.7457590195567972",
+        "timeSeconds": 1320,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17789638373051b960f6aa8f3b",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-16",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1778971205447ff9207e0349d58",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-17",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17790283929420.6795272515957894",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-17",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17790312580220.6419006884379933",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-17",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17790359012330.061585542293933836",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-17",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17790503132560.14589358607740427",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-17",
+        "description": "Spanish Boost with Martin",
+        "externalVideoUrl": "",
+        "id": "1779051515830fbc006aa15536",
+        "timeSeconds": 1080,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-18",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17791258991480.3909345867454673",
+        "timeSeconds": 2160,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-18",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17791299282960.047126552417912644",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-18",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17791308887520.45025839378335014",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-18",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17791387727720.6200658148261317",
+        "timeSeconds": 1260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-18",
+        "description": "Blood and marble ",
+        "externalVideoUrl": "",
+        "id": "17791417704800.100492786346558",
+        "timeSeconds": 1140,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-19",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17792058994420.5915231543918996",
+        "timeSeconds": 1560,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-19",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17792188203370.2812708255744207",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-19",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17792227311850.38298163646925515",
+        "timeSeconds": 5700,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-19",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1779228361017928ba160d8d148",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-19",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1779231369384da0db7165d98f8",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17792761884830.9747867339125599",
+        "timeSeconds": 1500,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17792989846080792dfb6bebf48",
+        "timeSeconds": 2100,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17793010048140.10143379385760698",
+        "timeSeconds": 1440,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17793014139450.932032773026504",
+        "timeSeconds": 240,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17793071118310.9284313134096898",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "17793081448280.6995642147807665",
+        "timeSeconds": 900,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-20",
+        "description": "Espanol con Guada",
+        "externalVideoUrl": "",
+        "id": "17793151391900.9463875693436141",
+        "timeSeconds": 360,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-21",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17793969480950.47532894589687025",
+        "timeSeconds": 2460,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-21",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17794021611850.28399943502428715",
+        "timeSeconds": 5640,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-22",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17794765013880.7661510303220836",
+        "timeSeconds": 2040,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-22",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17794765084450.32201118231926995",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-22",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17794814661597242719bff1ba8",
+        "timeSeconds": 4260,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-22",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "1779491116015ac96a78109dce8",
+        "timeSeconds": 3480,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-23",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "1779553867643cbf1799d967e08",
+        "timeSeconds": 5400,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-23",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17795634462130.7504210723223841",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-23",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17795634549260.8413114907775807",
+        "timeSeconds": 1560,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-23",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "177956738968561835e2075977",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-23",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17795770540190.25201412686292857",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol al vuelo",
+        "externalVideoUrl": "",
+        "id": "1779629965379ac07f51f330c4",
+        "timeSeconds": 2160,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17796385984190.5997289416407794",
+        "timeSeconds": 1560,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "177964156515112535b34d6995",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1779647887382ddc73aeb4bd08",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17796507794480.8195146721072678",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-24",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1779655244310c69a970249c42",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17796665938580.8203161747857326",
+        "timeSeconds": 2400,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17797185157300.808244399628797",
+        "timeSeconds": 3060,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1779729802159403b1203354d28",
+        "timeSeconds": 2760,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17797334449180.27214194132352465",
+        "timeSeconds": 1020,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17797334531250.9216882783903723",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17797411139330.7206453802868208",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17797445568310.38738958399231993",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-25",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1779747495849433ee21feff24",
+        "timeSeconds": 1620,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-26",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17798008132360.18905666856743047",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-26",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1779814075046bb307a138a70c8",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-26",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17798203154350.867946213201906",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-26",
+        "description": "Espanol si ",
+        "externalVideoUrl": "",
+        "id": "17798304615910.5178679361180402",
+        "timeSeconds": 1920,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-26",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17798324103920.9049983795478135",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-27",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17798823698560.7131462459491673",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-27",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17798985547810.17940208972931593",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-27",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17799078626470.6212555481096361",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-27",
+        "description": "Chill Spanish ",
+        "externalVideoUrl": "",
+        "id": "17799078776530.9367009519711451",
+        "timeSeconds": 240,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-27",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17799164336900.9940780698613636",
+        "timeSeconds": 1020,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-28",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17799706977910.7547852068559904",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-28",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17799942641530.7206259609132383",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-28",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1780009445011051c96a1b7e0e8",
+        "timeSeconds": 4800,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-29",
+        "description": "Spanish Taco",
+        "externalVideoUrl": "",
+        "id": "178005323105962a813c5acd9a8",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-29",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17800715550980.710785093752862",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-29",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17800839775550.28132258851267306",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17801438956730.4899696884183175",
+        "timeSeconds": 1080,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17801567786290.44739301556934674",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17801587347660.9680427769978549",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Spanish Boost with Martin ",
+        "externalVideoUrl": "",
+        "id": "17801746192580.23656962667349166",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Un cafecito en Espanol ",
+        "externalVideoUrl": "",
+        "id": "17801817395380.8587383193130872",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-30",
+        "description": "Un cafecito en Espanol ",
+        "externalVideoUrl": "",
+        "id": "17801826630530.387242382241047",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-05-31",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17802312691800.7440481963267315",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-31",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17802567152950.3199636624062308",
+        "timeSeconds": 3300,
+        "type": "listening"
+      },
+      {
+        "date": "2026-05-31",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17802604821640.9322997719517035",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-01",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17803365810920.2440520860299999",
+        "timeSeconds": 2340,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-01",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17803379360820.7206139605001866",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-01",
+        "description": "SBG ",
+        "externalVideoUrl": "",
+        "id": "17803399194450.9706835501033804",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-01",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1780349475444748235898026d8",
+        "timeSeconds": 3240,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-02",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17804034361710.5885903031600238",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-02",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17804253360550.16352980336550108",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-02",
+        "description": "SBG ",
+        "externalVideoUrl": "",
+        "id": "17804340266700.4634136485380069",
+        "timeSeconds": 4080,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-02",
+        "description": "SBG ",
+        "externalVideoUrl": "",
+        "id": "17804386729890.4992627327027114",
+        "timeSeconds": 3480,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17805059370297c62b1dae73bc",
+        "timeSeconds": 1440,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17805096849440.9131988628089788",
+        "timeSeconds": 1740,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Cuentame ",
+        "externalVideoUrl": "",
+        "id": "17805096911320.4058598421370963",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17805103856060968adb3d500c8",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17805122524050.6635117381646858",
+        "timeSeconds": 1500,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "17805185590010.6419802116872126",
+        "timeSeconds": 1800,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-03",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1780524365752fdaf9feee630e",
+        "timeSeconds": 2280,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-04",
+        "description": "Un cafecito en Espanol",
+        "externalVideoUrl": "",
+        "id": "1780570551078667bf34a3f622",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-04",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17805733034940.839947428654879",
+        "timeSeconds": 1200,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-04",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17805973896150.6042911476063055",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-04",
+        "description": "SBG ",
+        "externalVideoUrl": "",
+        "id": "17806001396111d1ada50e6e99",
+        "timeSeconds": 2940,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-04",
+        "description": "Espanol al vuelo ",
+        "externalVideoUrl": "",
+        "id": "17806139569350.3280072726503106",
+        "timeSeconds": 5400,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-05",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17806743291900.8755705888797923",
+        "timeSeconds": 2160,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-05",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17806884967240.401081867812657",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-05",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17806968257339d7fc03dc9e1b8",
+        "timeSeconds": 8460,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-06",
+        "description": "Espanol con Juan ",
+        "externalVideoUrl": "",
+        "id": "17807758139330.21049587162873556",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-06",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17807758224400.8619528612485903",
+        "timeSeconds": 5820,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-06",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17807761327610.5374464043071069",
+        "timeSeconds": 1920,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-06",
+        "description": "Charlas Hispanas",
+        "externalVideoUrl": "",
+        "id": "17807772530810.24596773100548286",
+        "timeSeconds": 600,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17808474093200.005744821283954578",
+        "timeSeconds": 1260,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Learn Spanish and go ",
+        "externalVideoUrl": "",
+        "id": "17808474604270.2797993911753785",
+        "timeSeconds": 1680,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17808627531872c197a5e87aad",
+        "timeSeconds": 5340,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "178086516448312f86fea9f42c",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "1780866973254780bc3f090a2f8",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "17808673304907b734faca4e9a",
+        "timeSeconds": 240,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "178086792780606014e8adc43",
+        "timeSeconds": 480,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-07",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "1780868863002714019059527f",
+        "timeSeconds": 600,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-08",
+        "description": "CuriosaMente",
+        "externalVideoUrl": "",
+        "id": "17808780160597882911b6012e8",
+        "timeSeconds": 1860,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-08",
+        "description": "Espanol con Juan ",
+        "id": "17809165233660.9098495712552166",
+        "timeSeconds": 1440,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-08",
+        "description": "CuriosaMente",
+        "externalVideoUrl": "",
+        "id": "178094146691828f24097963bc",
+        "timeSeconds": 1560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-08",
+        "description": "Learn Spanish and go ",
+        "id": "17809488050040.23265431957117838",
+        "timeSeconds": 2100,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-08",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "17809572592033f6f3420b70938",
+        "timeSeconds": 3780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-09",
+        "description": "Learn Spanish and go ",
+        "id": "17810090275610.7687672344268273",
+        "timeSeconds": 1620,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-09",
+        "description": "Learn Spanish and go ",
+        "id": "17810322442610.17541119264434712",
+        "timeSeconds": 1860,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-09",
+        "description": "Espanol con Juan ",
+        "id": "17810333307350.9175822369168888",
+        "timeSeconds": 960,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-09",
+        "description": "SBG ",
+        "id": "17810393869830.0940878205238307",
+        "timeSeconds": 7380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-10",
+        "description": "Learn Spanish and go ",
+        "id": "17811100898690.10348573522793143",
+        "timeSeconds": 1440,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-10",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1781110146139bf616baa2b4e78",
+        "timeSeconds": 2580,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-10",
+        "description": "Espanol con Juan ",
+        "id": "17811232282780.7974279425837265",
+        "timeSeconds": 2160,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-10",
+        "description": "SBG",
+        "externalVideoUrl": "",
+        "id": "1781130657078ef186176773ca8",
+        "timeSeconds": 4140,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Luisito Comunica",
+        "id": "17811801151490.5539533265077088",
+        "timeSeconds": 660,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Luisito Comunica ",
+        "id": "17811817398050.053625511866221894",
+        "timeSeconds": 780,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Luisito Comunica ",
+        "id": "17811938031390.2689638982972371",
+        "timeSeconds": 1380,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "1781198609221c7c6c7ad20a22",
+        "timeSeconds": 900,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Linguriosa",
+        "externalVideoUrl": "",
+        "id": "1781199319714128117088b081",
+        "timeSeconds": 540,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "SBG ",
+        "id": "17812073049920.3877308822607627",
+        "timeSeconds": 4560,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1781210065227615b4838e95fa8",
+        "timeSeconds": 1680,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-11",
+        "description": "Espanol si",
+        "externalVideoUrl": "",
+        "id": "1781214222441972f55dd34ea4",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "Espanol con Juan ",
+        "id": "17812759532330.5637258805639649",
+        "timeSeconds": 1980,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "SBG ",
+        "id": "17812785436650.06949605099330612",
+        "timeSeconds": 1980,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "Espanol si",
+        "id": "17812836557310.7577313230716473",
+        "timeSeconds": 1800,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "Espanol si ",
+        "id": "17812888064820.56782175621048",
+        "timeSeconds": 1740,
+        "type": "watching"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "Learn Spanish and go ",
+        "id": "17812915452410.5096203700201518",
+        "timeSeconds": 2460,
+        "type": "listening"
+      },
+      {
+        "date": "2026-06-12",
+        "description": "SBG ",
+        "id": "17813022925970.9804195377747015",
+        "timeSeconds": 4260,
+        "type": "watching"
+      }
+    ]
+  }
