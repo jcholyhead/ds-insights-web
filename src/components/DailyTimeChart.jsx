@@ -1,3 +1,4 @@
+import { useState, useMemo } from 'react'
 import {
   ComposedChart,
   Line,
@@ -8,6 +9,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts'
+
+const DAILY_SETTINGS_KEY = 'ds-stats-daily-settings'
 
 function DailyTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
@@ -23,9 +26,16 @@ function DailyTooltip({ active, payload, label }) {
     }}>
       <div style={{ fontWeight: 600, marginBottom: 4 }}>{label}</div>
       {d?.goalReached && <div style={{ color: '#2e7d32', marginBottom: 4 }}>✓ Goal reached</div>}
-      <div style={{ color: '#0288d1' }}>
-        Minutes: <strong>{d?.minutes?.toFixed(0)}</strong>
-      </div>
+      {d?.isOutlier ? (
+        <div style={{ color: '#e64a19' }}>
+          Minutes: <strong>{d?.realMinutes?.toFixed(0)}</strong>
+          <span style={{ marginLeft: 5, fontSize: 11, color: '#999' }}>outlier — clipped on chart</span>
+        </div>
+      ) : (
+        <div style={{ color: '#0288d1' }}>
+          Minutes: <strong>{d?.minutes?.toFixed(0)}</strong>
+        </div>
+      )}
       {d?.avg7  != null && <div style={{ color: '#f57c00' }}>7-day avg: {d.avg7.toFixed(0)} min/day</div>}
       {d?.avg30 != null && <div style={{ color: '#c62828' }}>30-day avg: {d.avg30.toFixed(0)} min/day</div>}
       <div style={{ color: '#555' }}>All-time avg: {d?.allTimeAvg?.toFixed(0)} min/day</div>
@@ -34,14 +44,92 @@ function DailyTooltip({ active, payload, label }) {
   )
 }
 
+function DailyDot(props) {
+  const { cx, cy, payload } = props
+  if (cx == null || cy == null) return null
+  if (payload?.isOutlier) {
+    return (
+      <g key={`outlier-${payload.date}`}>
+        <circle cx={cx} cy={cy} r={5} fill="#e64a19" fillOpacity={0.85} stroke="white" strokeWidth={1} />
+      </g>
+    )
+  }
+  return (
+    <circle key={`dot-${payload.date}`} cx={cx} cy={cy} r={3} fill="#0288d1" fillOpacity={0.45} />
+  )
+}
+
 export default function DailyTimeChart({ points }) {
+  const [showSettings, setShowSettings] = useState(false)
+  const [compressY, setCompressY] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(DAILY_SETTINGS_KEY) || '{}').compressY ?? false }
+    catch { return false }
+  })
+
+  function toggleCompressY(val) {
+    setCompressY(val)
+    try {
+      const prev = JSON.parse(localStorage.getItem(DAILY_SETTINGS_KEY) || '{}')
+      localStorage.setItem(DAILY_SETTINGS_KEY, JSON.stringify({ ...prev, compressY: val }))
+    } catch {}
+  }
+
+  const { processedPoints, yDomain } = useMemo(() => {
+    if (!compressY || !points.length) return { processedPoints: points, yDomain: undefined }
+
+    const maxAllTimeAvg = Math.max(...points.map(p => p.allTimeAvg ?? 0))
+    const maxDaily      = Math.max(...points.map(p => p.minutes ?? 0))
+    const maxAvg7       = Math.max(...points.map(p => p.avg7 ?? 0))
+    const maxAvg30      = Math.max(...points.map(p => p.avg30 ?? 0))
+    const threshold     = Math.max(
+      Math.min(2 * maxAllTimeAvg, maxDaily),
+      maxAvg7,
+      maxAvg30,
+    )
+
+    const processed = points.map(p =>
+      p.minutes > threshold
+        ? { ...p, realMinutes: p.minutes, minutes: threshold, isOutlier: true }
+        : p
+    )
+
+    return { processedPoints: processed, yDomain: [0, threshold] }
+  }, [points, compressY])
+
   const tickInterval = Math.max(0, Math.floor(points.length / 12) - 1)
 
   return (
     <div className="chart-card">
-      <h2>Daily Watch Time</h2>
+      <div className="chart-card__header">
+        <h2>Daily Watch Time</h2>
+        <button
+          className="chart-settings-btn"
+          onClick={() => setShowSettings(s => !s)}
+          aria-expanded={showSettings}
+          title="Chart settings"
+        >
+          ⚙
+        </button>
+      </div>
+
+      {showSettings && (
+        <div className="chart-settings-panel">
+          <label className="chart-settings-item">
+            <input
+              type="checkbox"
+              checked={compressY}
+              onChange={e => toggleCompressY(e.target.checked)}
+            />
+            Compress y-axis
+            <span style={{ color: '#888', fontSize: 12, marginLeft: 4 }}>
+              (caps at 2× all-time avg; outliers shown in orange)
+            </span>
+          </label>
+        </div>
+      )}
+
       <ResponsiveContainer width="100%" height={400}>
-        <ComposedChart data={points} margin={{ top: 24, right: 30, left: 20, bottom: 40 }}>
+        <ComposedChart data={processedPoints} margin={{ top: 24, right: 30, left: 20, bottom: 40 }}>
           <CartesianGrid strokeDasharray="3 3" opacity={0.25} />
           <XAxis
             dataKey="date"
@@ -52,6 +140,8 @@ export default function DailyTimeChart({ points }) {
             label={{ value: 'Date', position: 'insideBottom', offset: -28 }}
           />
           <YAxis
+            domain={yDomain}
+            allowDataOverflow={compressY}
             label={{ value: 'Minutes watched', angle: -90, position: 'insideLeft', offset: 10 }}
           />
           <Tooltip content={<DailyTooltip />} />
@@ -62,7 +152,7 @@ export default function DailyTimeChart({ points }) {
             name="Daily minutes"
             stroke="#90CAF9"
             strokeWidth={0}
-            dot={{ fill: '#0288d1', r: 3, fillOpacity: 0.45, strokeWidth: 0 }}
+            dot={<DailyDot />}
             activeDot={{ r: 5, fill: '#0288d1' }}
             isAnimationActive={false}
           />
