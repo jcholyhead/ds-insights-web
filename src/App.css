@@ -900,6 +900,19 @@ main {
   margin: 0;
 }
 
+.gate-demo-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #3949ab;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.gate-demo-link:hover {
+  text-decoration: underline;
+}
+
 .extension-gate__options {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1199,6 +1212,75 @@ main {
 .research-email-error {
   font-size: 0.8rem;
   color: #c62828;
+}
+
+/* ── Demo banner ── */
+
+.demo-banner {
+  background: linear-gradient(90deg, #1a237e 0%, #1565c0 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.demo-banner__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.demo-banner__label {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+
+.demo-banner__text {
+  flex: 1;
+  font-size: 14px;
+  opacity: 0.92;
+  min-width: 180px;
+}
+
+.demo-banner__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.demo-banner__btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+  background: transparent;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.demo-banner__btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.demo-banner__btn--primary {
+  background: white;
+  color: #1a237e;
+  border-color: white;
+}
+
+.demo-banner__btn--primary:hover {
+  background: #e8eaf6;
 }
 
 /* ── Responsive ── */

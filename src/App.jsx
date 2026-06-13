@@ -65,6 +65,7 @@ function ExtensionGate({ onManual }) {
         <div className="extension-gate__header">
           <h1>Dreaming Insights</h1>
           <p>Choose how you'd like to get started.</p>
+          <a href="/demo.html" className="gate-demo-link">See an example first →</a>
         </div>
 
         <div className="extension-gate__options">
@@ -135,6 +136,8 @@ function ExtensionGate({ onManual }) {
         <a href="https://forms.gle/F7FzqFdQ9yA5XgtJA" target="_blank" rel="noreferrer">Contact / Support</a>
         <span className="site-footer__sep">·</span>
         <a href="/privacy.html" target="_blank" rel="noreferrer">Privacy Policy</a>
+        <span className="site-footer__sep">·</span>
+        <a href="https://github.com/jcholyhead/ds-insights-web" target="_blank" rel="noreferrer">Source Code</a>
       </footer>
     </div>
   )
@@ -737,11 +740,11 @@ export default function App() {
         )}
       </main>
       <footer className="site-footer">
-        <a href="https://forms.gle/F7FzqFdQ9yA5XgtJA" target="_blank" rel="noreferrer">
-          Contact / Support
-        </a>
+        <a href="https://forms.gle/F7FzqFdQ9yA5XgtJA" target="_blank" rel="noreferrer">Contact / Support</a>
         <span className="site-footer__sep">·</span>
         <a href="/privacy.html" target="_blank" rel="noreferrer">Privacy Policy</a>
+        <span className="site-footer__sep">·</span>
+        <a href="https://github.com/jcholyhead/ds-insights-web" target="_blank" rel="noreferrer">Source Code</a>
       </footer>
 
       {showResearchModal && (
