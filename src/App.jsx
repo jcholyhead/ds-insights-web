@@ -30,13 +30,35 @@ import ExportButton from './components/ExportButton'
 import DailyTimeChart from './components/DailyTimeChart'
 import DayStatsSection from './components/DayStatsSection'
 import ResearchConsentModal from './components/ResearchConsentModal'
+import YouTubeLabelModal from './components/YouTubeLabelModal'
 import './App.css'
 
 const EXTENSION_STORE_URL = 'https://chromewebstore.google.com/detail/dreaming-insights-extensi/cafjfdpcidjkbpcjpgdkgoakjdiicbmh'
 const COFFEE_URL = 'https://buymeacoffee.com/dreaminginsights'
 
-const RESEARCH_API_URL = import.meta.env.VITE_RESEARCH_API_URL
-const RESEARCH_API_KEY = import.meta.env.VITE_RESEARCH_API_KEY
+const RESEARCH_API_URL  = import.meta.env.VITE_RESEARCH_API_URL
+const RESEARCH_API_KEY  = import.meta.env.VITE_RESEARCH_API_KEY
+const YT_CHANNELS_API_URL = import.meta.env.VITE_YT_CHANNELS_API_URL
+
+const YT_ID_PATTERNS = [
+  /[?&]v=([A-Za-z0-9_-]{11})/,
+  /youtu\.be\/([A-Za-z0-9_-]{11})/,
+  /\/shorts\/([A-Za-z0-9_-]{11})/,
+  /\/embed\/([A-Za-z0-9_-]{11})/,
+  /\/v\/([A-Za-z0-9_-]{11})/,
+]
+
+function extractYouTubeId(str) {
+  for (const p of YT_ID_PATTERNS) {
+    const m = str.match(p)
+    if (m) return m[1]
+  }
+  return null
+}
+
+function isYouTubeUrl(str) {
+  return /youtube\.com|youtu\.be/i.test(str)
+}
 const RESEARCH_STORAGE_KEY = 'ds-stats-research'
 
 async function computeResearchHash(dayTimeEntries) {
@@ -208,6 +230,9 @@ export default function App() {
   })
   const [uploadStatus, setUploadStatus] = useState(null) // null | 'uploading' | 'done' | 'error'
   const [showResearchModal, setShowResearchModal] = useState(false)
+  const [unmappedYtUrls, setUnmappedYtUrls] = useState([])
+  const [showYtModal, setShowYtModal] = useState(false)
+  const [ytSubmitStatus, setYtSubmitStatus] = useState('idle')
 
   async function handleGenerate() {
     setError('')
@@ -255,6 +280,35 @@ export default function App() {
         const validation = validateExternalEntries(externalData.externalTimes)
         if (validation.warnings.length > 0) setExtWarnings(validation.warnings)
         if (validation.plottable) externalEntries = externalData.externalTimes
+      }
+
+      // ── Enrich YouTube URL descriptions with channel names ──────────
+      const getYtUrl = e => isYouTubeUrl(e.externalVideoUrl || '') ? e.externalVideoUrl : null
+      const ytUrlEntries = externalEntries.filter(e => getYtUrl(e))
+      if (ytUrlEntries.length > 0) {
+        let ytMapping = {}
+        try {
+          const r = await fetch('/youtube-channels.json')
+          if (r.ok) ytMapping = await r.json()
+        } catch {}
+
+        const newUnmappedUrls = []
+        const seenIds = new Set()
+        externalEntries = externalEntries.map(e => {
+          const ytUrl = getYtUrl(e)
+          if (!ytUrl) return e
+          const videoId = extractYouTubeId(ytUrl)
+          if (!videoId) return e
+          if (ytMapping[videoId]) return { ...e, description: ytMapping[videoId] }
+          if (!seenIds.has(videoId)) {
+            seenIds.add(videoId)
+            newUnmappedUrls.push(ytUrl)
+          }
+          return e
+        })
+        setUnmappedYtUrls(newUnmappedUrls)
+      } else {
+        setUnmappedYtUrls([])
       }
 
       // ── Parse day watched time (optional) ──────────────────────────
@@ -392,6 +446,26 @@ export default function App() {
       xMin: fromH,
     }
   }, [charts, fromLevel, toLevel]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function handleYtSubmit() {
+    setYtSubmitStatus('submitting')
+    try {
+      const res = await fetch(YT_CHANNELS_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Api-Key': RESEARCH_API_KEY },
+        body: JSON.stringify({ urls: unmappedYtUrls }),
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      setYtSubmitStatus('success')
+      setTimeout(() => {
+        setShowYtModal(false)
+        setYtSubmitStatus('idle')
+        handleGenerateRef.current?.()
+      }, 1200)
+    } catch {
+      setYtSubmitStatus('error')
+    }
+  }
 
   async function performResearchUpload(chartsSnapshot, email = null) {
     setUploadStatus('uploading')
@@ -704,6 +778,16 @@ export default function App() {
           </div>
         )}
 
+        {unmappedYtUrls.length > 0 && (
+          <div className="warning yt-warning">
+            <strong>⚠️ {unmappedYtUrls.length} YouTube video{unmappedYtUrls.length !== 1 ? 's' : ''} couldn't be matched to a channel name</strong>
+            {' '}— they appear as raw URLs in the charts.{' '}
+            <button className="yt-warning__btn" onClick={() => { setShowYtModal(true); setYtSubmitStatus('idle') }}>
+              Submit URLs for labelling
+            </button>
+          </div>
+        )}
+
         {filteredData && (
           <>
             <InfoPanel
@@ -785,6 +869,15 @@ export default function App() {
             setShowResearchModal(false)
             performResearchUpload(charts, email)
           }}
+        />
+      )}
+
+      {showYtModal && (
+        <YouTubeLabelModal
+          urls={unmappedYtUrls}
+          status={ytSubmitStatus}
+          onConfirm={handleYtSubmit}
+          onClose={() => { setShowYtModal(false); setYtSubmitStatus('idle') }}
         />
       )}
     </>

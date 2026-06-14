@@ -378,7 +378,7 @@ main {
 
 .warning {
   background: #fff8e1;
-  color: #e65100;
+  color: #b45309;
   border: 1px solid #ffcc80;
   border-radius: 6px;
   padding: 0.75rem 1rem;
@@ -393,6 +393,29 @@ main {
 
 .warning li {
   margin-bottom: 0.2rem;
+}
+
+.yt-warning {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.yt-warning__btn {
+  background: none;
+  border: 1px solid #b45309;
+  color: #b45309;
+  border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.yt-warning__btn:hover {
+  background: #fff3e0;
 }
 
 .chart-note {
